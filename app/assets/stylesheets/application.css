@@ -87,15 +87,15 @@ body {
 .txt-blanco{
     color: white;
 }
-.txt-blanco:hover{
-  color: rgba(220, 240, 255, 0.9);
+.txt-blanco:hover, .txt-blanco:focus, .txt-blanco:active{
+    color: rgba(220, 240, 255, 0.9);
 }
 
  .txt-negro{
     color:black;
  }
 
- .txt-negro:hover, .txt-negro:focus{
+ .txt-negro:hover, .txt-negro:focus, .txt-negro:active{
     color: rgba(44, 90, 120, 0.9);
  }
 /*-----------------------------------------------------*/
@@ -113,6 +113,8 @@ footer {
     width: 100%;
 }
 
-body{
+.banner-inicio{
 	background-image: url(http://gdurl.com/Y4eN);
+  width: 100%;
+  height: 500px;
 }

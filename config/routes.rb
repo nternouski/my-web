@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get 'contact/mail'
 
   get "/" => "welcome#index", :as => "root"
 

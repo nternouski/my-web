@@ -26,21 +26,19 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand">
-                    Sebastian Nahuel Ternouski
-                </a>
+                <%= link_to "Sebastian Nahuel Ternouski ", welcome_index_path, class: "navbar-brand txt-blanco barra" %>
             </div>
 
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Link vario</a>
+                        <%= link_to "Link vario", contact_mail_path, class: "txt-blanco barra" %>
                     </li>
                     <li>
-                        <a href="#">Link vario 2</a>
+                        <%= link_to "Link vario 2", contact_mail_path, class: "txt-blanco barra" %>
                     </li>
                     <li>
-                        <a  href="#">Contacto</a>
+                        <%= link_to "Contacto", contact_mail_path, class: "txt-blanco barra" %>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -48,73 +46,6 @@
     </nav>
 
 	<%= yield %>
-d<br>
-
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
-d<br>
 
 	<!-- El pie de pagina -->
 	<footer class="footer">
@@ -126,7 +57,7 @@ d<br>
 				<!-- logo.svg -->
 			</div>
 			<div class="col-md-4 text-muted">
-				<%= link_to 'Contacto', root_path %>
+				<%= link_to 'Contacto', contact_mail_path %>
 				&nbsp;&nbsp;
 				<%= link_to 'FAQ', root_path %>
 			</div>

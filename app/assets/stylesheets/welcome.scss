@@ -1,3 +1,24 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mi-foto{
+	background-image: url(http://gdurl.com/2-EZ);
+	
+	border: 4px solid white;
+
+    position: relative;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.txt-introduccion{
+	font-size: 14pt;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+.foto-intro{
+	padding: 150px;
+}
