@@ -19,12 +19,12 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".barra").addClass("txt-negro");
-        $(".barra").removeClass("txt-blanco");
+        $(".barra").addClass("barra-negro");
+        $(".barra").removeClass("barra-blanco");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $(".barra").removeClass("txt-negro");
-        $(".barra").addClass("txt-blanco");
+        $(".barra").removeClass("barra-negro");
+        $(".barra").addClass("barra-blanco");
     }
 }
 

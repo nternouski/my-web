@@ -26,19 +26,19 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <%= link_to "Sebastian Nahuel Ternouski ", welcome_index_path, class: "navbar-brand txt-blanco barra" %>
+                <%= link_to "Sebastian Nahuel Ternouski ", root_path, class: "navbar-brand barra-blanco barra" %>
             </div>
 
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <%= link_to "Link vario", contact_mail_path, class: "txt-blanco barra" %>
+                        <%= link_to "Link vario", contact_mail_path, class: "barra-blanco barra" %>
                     </li>
                     <li>
-                        <%= link_to "Link vario 2", contact_mail_path, class: "txt-blanco barra" %>
+                        <%= link_to "Link vario 2", contact_mail_path, class: "barra-blanco barra" %>
                     </li>
                     <li>
-                        <%= link_to "Contacto", contact_mail_path, class: "txt-blanco barra" %>
+                        <%= link_to "Contacto", contact_mail_path, class: "barra-blanco barra" %>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -57,9 +57,9 @@
 				<!-- logo.svg -->
 			</div>
 			<div class="col-md-4 text-muted">
-				<%= link_to 'Contacto', contact_mail_path %>
+				<%= link_to 'Inicio', root_path %>
 				&nbsp;&nbsp;
-				<%= link_to 'FAQ', root_path %>
+				<%= link_to 'Contacto', contact_mail_path %>
 			</div>
 		</div>
 	</footer>

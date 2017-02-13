@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 p,h1, div{
 	font-family: 'Lato', sans-serif;
@@ -84,18 +85,18 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.txt-blanco{
+.barra-blanco{
     color: white;
 }
-.txt-blanco:hover, .txt-blanco:focus, .txt-blanco:active{
+.barra-blanco:hover, .barra-blanco:focus, .barra-blanco:active{
     color: rgba(220, 240, 255, 0.9);
 }
 
- .txt-negro{
+ .barra-negro{
     color:black;
  }
 
- .txt-negro:hover, .txt-negro:focus, .txt-negro:active{
+ .barra-negro:hover, .barra-negro:focus, .barra-negro:active{
     color: rgba(44, 90, 120, 0.9);
  }
 /*-----------------------------------------------------*/
@@ -117,4 +118,12 @@ footer {
 	background-image: url(http://gdurl.com/Y4eN);
   width: 100%;
   height: 500px;
+}
+
+.inicio{
+  padding-top: 100px; 
+}
+
+.texto-blanco{
+  color: white;
 }
