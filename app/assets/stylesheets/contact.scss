@@ -15,3 +15,49 @@
 .informacion-contactos{
 	font-size: 12pt; 
 }
+
+input[type="text"], textarea{
+	border: 0;
+	border-bottom: 1px solid rgba(40, 135, 168, 1);
+	background-color: rgba(40, 85, 112, 0.4);
+	border-radius: 3px;
+	padding: 7px;
+	color: white;
+	outline: none;
+}
+
+.form-group > textarea{
+	color: white;
+	width: 100%;
+	resize: vertical;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: rgba(228, 225, 255, 0.9);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: rgba(228, 225, 255, 0.9);
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: rgba(228, 225, 255, 0.9);
+	opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: rgba(228, 225, 255, 0.9);
+}
+
+.boton{
+	background: none;
+	border-radius: 7px;
+	color: white;
+	padding: 7px 15px 7px 15px;
+	border: 1px solid rgba(40, 135, 168, 1);
+	font-size: 12pt;
+	outline: none;
+}
+
+.boton:hover{
+	border: 2px solid rgba(40, 135, 168, 1);
+	background-color: rgba(40, 85, 112, 0.3);
+}

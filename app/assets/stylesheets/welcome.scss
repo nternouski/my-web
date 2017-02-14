@@ -2,11 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.banner-inicio{
+	background: none;
+	width: 100%;
+}
+
 .mi-foto{
 	background-image: url(http://gdurl.com/2-EZ);
-	
 	border: 4px solid white;
-
     position: relative;
     display: block;
     max-width: 200px;
@@ -16,9 +19,16 @@
 .txt-introduccion{
 	font-size: 14pt;
 	color: white;
+	padding: 50px;
 	font-family: 'Lato', sans-serif;
 }
 
 .foto-intro{
 	padding: 150px;
+}
+
+.segunda-parte{
+	padding: 100px 200px 100px 200px;
+	background-color: black;
+	color: white;
 }
