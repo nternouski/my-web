@@ -1,27 +1,131 @@
 <div class="imagen-inicio" data-position="center center">
 	<div class="banner-inicio">
-		<div class="row foto-intro">
-			<div class="col-md-4">
-				<%= image_tag("http://gdurl.com/2-EZ", class: "mi-foto") %>
-		 	</div>
-			<div class="col-md-8 txt-introduccion">Soy estudiante de Ingeniería en Computación en la Universidad Nacional de La Plata.</div>
+		<%= image_tag("http://gdurl.com/cFsx", class: "logo", :alt => "logo personal", title:"Logo") %>
+		<h3 class="txt-nombre"> Sebastian Nahuel Ternouski</h3>
+	</div>
+</div>
+
+<div class="segunda-parte">
+	<div class="col-md-5 col-sm-12 col-xs-12 txt-introduccion derecha">
+		<h2> Sobre mi </h2>
+		<p> Soy estudiante de Ingeniería en Computación, actualmente cursado 4to año en la Universidad Nacional de La Plata. Me interesa la programación, mi pasatiempo es hacer proyectos en multimedia con una diversa cantidad de programas incluyendo 3D. </p>
+	</div>
+	<div class="col-md-3 col-sm-6 col-xs-6 centrado">
+		<%= image_tag("http://gdurl.com/2-EZ", class: "mi-foto") %>
+	</div>
+	<div class="col-md-3 col-sm-6 col-xs-6 txt-introduccion">
+		<h2> Datos </h2>
+		<strong>Nombre Completo:</strong> <br> <p>Sebastian Nahuel Ternouski</p>
+		<strong>Edad:</strong> <br> <p><%= @cantidad_de_anios %> años</p>
+	</div>
+</div>
+
+<div class="tercera-parte">
+	<div class="col-md-6 col-sm-12 centrado">
+		<h3 class="">Multimedia</h3> <br>
+		<div class="col-md-6 col-sm-6 col-xs-6 izquierda">
+			<p class="derecha">
+				Adobe Illustrator <br>
+				Adobe After Efect <br>
+				Adobe Photoshop <br>
+				Adobe Audition <br>
+				Adobe Premiere <br>
+				Blender (3D) <br>
+			</p>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div class="calificacion centrado"><!-- Ai -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Ae -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Ps -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Aa -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Ap -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Blender -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6 col-sm-12 centrado">
+		<h3>Lenguajes de Programacion</h3> <br>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<p class="derecha">
+				Ruby on rails <br>
+				Java <br>
+				Latex <br>
+				C/C++ <br>
+				Pascal <br>
+				Matlab <br>
+			</p>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div class="calificacion centrado"><!-- RoR -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Java -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Latex -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- C/C++ -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Pascal -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Matlab -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
 		</div>
 	</div>
 </div>
 
+<div class="cuarta-parte centrado img-desenfoque">
+	<h3>Proyectos</h3> <br>
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
 
-<div class="segunda-parte">
-	<p>
-		Sobre mi: Me gusta programar, soy aficionado en el el area de multimedia con conocimiento en diversos programas de software como modelado 3D y produccion audio visual.
-	</p>
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
+
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
+
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+		<figure href="#">
+			<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+		</figure>
+	</div>
+
 </div>
-<div class="segunda-parte">
-	<p>
-		Sobre mi: Me gusta programar, soy aficionado en el el area de multimedia con conocimiento en diversos programas de software como modelado 3D y produccion audio visual.
-	</p>
-</div>
-<div class="segunda-parte">
-	<p>
-		Sobre mi: Me gusta programar, soy aficionado en el el area de multimedia con conocimiento en diversos programas de software como modelado 3D y produccion audio visual.
-	</p>
-</div>
+
+

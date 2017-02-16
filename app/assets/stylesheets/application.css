@@ -14,12 +14,18 @@
  *= require_self
  *= require font-awesome
  */
-p,h1, div{
-	font-family: 'Lato', sans-serif;
+p, h1, h2, h3, h4, div{
+	font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
+
+p, div, i {
+    font-size: 12pt
+}
+
 .imagen-inicio{
   background: no-repeat center right fixed url(http://gdurl.com/Y4eN);
-  height: 500px;
+  height:100vh;
 }
 
 html {
@@ -34,7 +40,7 @@ body {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
@@ -103,6 +109,7 @@ body {
  .barra-negro:hover, .barra-negro:focus, .barra-negro:active{
     color: rgba(44, 90, 120, 0.9);
  }
+ 
 /*-----------------------------------------------------*/
 
 footer {
