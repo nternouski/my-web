@@ -5,15 +5,15 @@
 	</div>
 </div>
 
-<div class="segunda-parte">
-	<div class="col-md-5 col-sm-12 col-xs-12 txt-introduccion derecha">
+<div class="segunda-parte txt-blanco">
+	<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 txt-introduccion-sobreMi">
 		<h2> Sobre mi </h2>
 		<p> Soy estudiante de Ingeniería en Computación, actualmente cursado 4to año en la Universidad Nacional de La Plata. Me interesa la programación, mi pasatiempo es hacer proyectos en multimedia con una diversa cantidad de programas incluyendo 3D. </p>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xs-6 centrado">
-		<%= image_tag("http://gdurl.com/2-EZ", class: "mi-foto thumbnail") %>
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+		<%= image_tag("http://gdurl.com/2-EZ", class: "mi-foto img-responsive center-block") %>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xs-6 txt-introduccion">
+	<div class="col-lg-5 col-md-4 col-sm-6 col-xs-6 txt-introduccion-Datos">
 		<h2> Datos </h2>
 		<strong>Nombre Completo:</strong> <br> <p>Sebastian Nahuel Ternouski</p>
 		<strong>Edad:</strong> <br> <p><%= @cantidad_de_anios %> años</p>
@@ -56,11 +56,12 @@
 	</div>
 
 	<div class="col-md-6 col-sm-12 centrado">
-		<h3>Lenguajes de Programacion</h3> <br>
+		<h3>Lenguajes de Programación</h3> <br>
 		<div class="col-md-6 col-sm-6 col-xs-6">
 			<p class="derecha">
 				Ruby on rails <br>
 				Java <br>
+				CSS/HTML <br>
 				Latex <br>
 				C/C++ <br>
 				Pascal <br>
@@ -72,6 +73,9 @@
 				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
 			</div>
 			<div class="calificacion centrado"><!-- Java -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- CSS/HTML -->
 				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
 			</div>
 			<div class="calificacion centrado"><!-- Latex -->
@@ -88,10 +92,69 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="col-md-6 col-sm-12 centrado">
+		<h3>Idiomas</h3> <br>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<p class="derecha">
+				Español (nativo) <br>
+				Ingles (9 años)<br>
+				Portugues (7 años) <br>
+			</p>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div class="calificacion centrado"><!-- Español -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Ingles -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Portugues -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+		<div class="col-md-6 col-sm-12 centrado">
+		<h3>Idiomas</h3> <br>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<p class="derecha">
+				Español (nativo) <br>
+				Ingles (9 años)<br>
+				Portugues (7 años) <br>
+			</p>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div class="calificacion centrado"><!-- Español -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Ingles -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+			<div class="calificacion centrado"><!-- Portugues -->
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="cuarta-parte centrado">
-	<h3>Proyectos</h3> <br>
+	<h2>Proyectos</h2> <br>
+
+	<a href="https://github.com/nternouski/my-web">
+		<div class="col-md-4 col-sm-6 col-xs-12 sin-padding">
+			<figure class="img-desenfoque">
+				<img class="img-responsive" src="http://gdurl.com/QirV">
+				<div class="txt-desenfoque">
+					<h2>Mi pagina personal</h2>
+					<p>Utilizando ruby on rails. Diseño responsivo. Año 2017.</p>
+				</div>
+				<figcaption>
+				<a ></a>
+				</figcaption>
+			</figure>
+		</div>
+	</a>
 
 	<a href="https://nosrobaronelnombre.herokuapp.com/">
 		<div class="col-md-4 col-sm-6 col-xs-12 sin-padding">
@@ -99,7 +162,7 @@
 				<img class="img-responsive" src="http://gdurl.com/A4oa">
 				<div class="txt-desenfoque">
 					<h2>Pagina web Gauchada</h2>
-					<p>Trabajo grupar con el pseudo nombre de MasterBranch, utilizando Ruby on rails, catedra Ing Software. Año 2016</p>
+					<p>Trabajo grupal con el pseudo nombre de MasterBranch, utilizando Ruby on rails, catedra Ing Software. Año 2016.</p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -114,22 +177,7 @@
 				<img class="img-responsive" src="http://gdurl.com/nQ0D">
 				<div class="txt-desenfoque">
 					<h2>Diseño 3D</h2>
-					<p>Software utilizado: Blender. Año 2015</p>
-				</div>
-				<figcaption>
-				<a ></a>
-				</figcaption>
-			</figure>
-		</div>
-	</a>
-	
-	<a href="http://google.com">
-		<div class="col-md-4 col-sm-6 col-xs-12 sin-padding">
-			<figure class="img-desenfoque">
-				<img class="img-responsive" src="http://gdurl.com/QirV">
-				<div class="txt-desenfoque">
-					<h2>Mi pagina personal</h2>
-					<p>Utilizando ruby on rails. Año 2017</p>
+					<p>Software utilizado: Blender. Año 2015.</p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -176,4 +224,7 @@
 
 </div>
 
+
+<div class="cuarta-parte centrado">
+</div>
 

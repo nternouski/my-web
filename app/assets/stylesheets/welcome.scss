@@ -28,10 +28,20 @@
 
 .mi-foto{
     max-height: 200px;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    border-radius: 4px;
 }
 
 .centrado{
-    text-align: center;
+    text-align: center!important;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .izquierda{
@@ -53,9 +63,33 @@
 	display:inline-block;
 }
 
-.txt-introduccion{
-	color: white;
+.txt-blanco{
+  color: white;
 }
+
+@media (max-width: 992px) {
+  .txt-introduccion-sobreMi, {
+    text-align: center;
+  }
+  .txt-introduccion-sobreMi{
+
+  }
+  .mi-foto{
+    margin-top: 25px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .txt-introduccion-sobreMi, {
+    text-align: right;
+  }
+  .txt-introduccion-sobreMi{
+
+  }
+
+}
+
 
 .tercera-parte{
 	padding: 100px 20px 100px 20px;

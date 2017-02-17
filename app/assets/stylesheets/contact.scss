@@ -9,7 +9,7 @@
 }
 
 .contenedor-contacto{
-	padding: 200px;
+	padding: 250px;
 }
 
 .informacion-contactos{
@@ -20,9 +20,10 @@ input[type="text"], textarea{
 	border: 0;
 	border-bottom: 1px solid rgba(40, 135, 168, 1);
 	background-color: rgba(40, 85, 112, 0.4);
-	padding: 7px;
+	padding: 10px;
 	color: white;
 	outline: none;
+	width: 100%;
 }
 
 .form-group > textarea{
