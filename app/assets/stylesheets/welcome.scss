@@ -61,6 +61,7 @@
 	padding: 100px 50px 100px 50px;
 	background-color: #005A31;
 	display:inline-block;
+  margin-bottom: -7px;
 }
 
 .txt-blanco{
@@ -70,9 +71,6 @@
 @media (max-width: 992px) {
   .txt-introduccion-sobreMi, {
     text-align: center;
-  }
-  .txt-introduccion-sobreMi{
-
   }
   .mi-foto{
     margin-top: 25px;
@@ -84,10 +82,6 @@
   .txt-introduccion-sobreMi, {
     text-align: right;
   }
-  .txt-introduccion-sobreMi{
-
-  }
-
 }
 
 
@@ -97,15 +91,35 @@
 	width:100%;
 	color: white;
 	display:inline-block;
+  margin-bottom: -7px;
 }
 
 .calificacion{
 	transition: letter-spacing 0.5s ease;
 	letter-spacing: 4px;
+  min-width: 140px;
 }
 
 .calificacion:hover{
 	letter-spacing: 10px;
+}
+
+.conocimiento {
+  min-width: 135px;
+}
+
+@media (min-width: 992px){
+  .margenes {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .margenes {
+    padding-left: 150px!important;
+    padding-right: 150px!important;
+  }
 }
 
 .cuarta-parte{
@@ -114,6 +128,7 @@
 	width:100%;
 	color: black;
 	display:inline-block;
+  margin-bottom: -7px;
 }
 
 .img-desenfoque {
