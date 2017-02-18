@@ -5,7 +5,7 @@ class ContactController < ApplicationController
 				flash[:danger]="Los campos nombre, mail y mensaje no deben estar vacios."
 			else
 				if UserMailer.contact(params[:nombre],params[:email],params[:asunto],params[:mensaje]).deliver
-					flash[:success]="Su mail se envio correctamente."
+					flash[:success]="Su mail se envió correctamente."
 				end
 			end
 		end
