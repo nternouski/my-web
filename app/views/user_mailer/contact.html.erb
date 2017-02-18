@@ -3,14 +3,19 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h3>Has recibido un mensaje de <%= @nomYap %></h3>
-    <p>
-      Dice:
+    <h4>Enviado desde la pagina personal.</h4>
+    <div>
+      <h3>Has recibido un mensaje de <%= @nomYap %></h3>
       <br>
-      <%= @mensaje %>
-      <br>
-      <br>
-      <cite><%= @nomYap %></cite>
-    </p>
+      <h4>Con mail: <%= @email %></h4>
+      <p>
+        Dice:
+        <br>
+        <%= @mensaje %>
+        <br>
+        <br>
+        <cite><%= @nomYap %></cite>
+      </p>
+    </div>
   </body>
 </html>

@@ -59,3 +59,5 @@ end
 # Para los iconos
 gem 'font-awesome-rails'
 
+# Para el recaptcha
+gem "recaptcha", :require => "recaptcha/rails"

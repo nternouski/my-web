@@ -16,6 +16,12 @@
 	font-size: 12pt; 
 }
 
+.alert-recaptcha_error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
 input[type="text"], textarea{
 	border: 0;
 	border-bottom: 1px solid rgba(40, 135, 168, 1);
@@ -46,6 +52,10 @@ input[type="text"], textarea{
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
 	color: rgba(228, 225, 255, 0.9);
 }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
 
 .boton{
 	background: none;

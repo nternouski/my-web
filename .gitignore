@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignorar las claves para reCaptcha
+/config/initializers/recaptcha.rb
