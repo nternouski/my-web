@@ -23,11 +23,6 @@ p, div, i {
     font-size: 12pt
 }
 
-.imagen-inicio{
-  background: no-repeat center right fixed url(http://gdurl.com/Y4eN);
-  height:100vh;
-}
-
 html {
     position: relative;
     min-height: 100%;

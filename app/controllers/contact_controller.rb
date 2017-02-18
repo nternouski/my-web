@@ -1,11 +1,11 @@
 class ContactController < ApplicationController
-	def mensaje
+	def mail
 		if params[:commit].present? && params[:commit] == "Enviar"
 			if params[:email].empty? || params[:nombre].empty? || params[:mensaje].empty?
-				flash[:alert]="Los campos no deben estar vacios."
+				flash[:danger]="Los campos nombre, mail y mensaje no deben estar vacios."
 			else
-				SendMailer.contact(params[:email],params[:nombre],params[:mensaje]).deliver
-				flash[:notice]="Se envio correctamente, te contestaremos a la brevedad."
+				UserMailer.contact(params[:nombre],params[:email],params[:asunto],params[:mensaje]).deliver
+				flash[:success]="Su mail se envio correctamente."
 			end
 		end
 	end
