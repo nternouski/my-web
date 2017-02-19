@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-	default from: "veritaserumpotions@gmail.com"
+	default from: "mipaginasnt@gmail.com"
   def contact(nomYap,email,asunto,mensaje)
     @email = email
     @nomYap = nomYap
