@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
     @nomYap = nomYap
     @asunto = asunto
   	@mensaje = mensaje
-    mail(to: "unlp93nahuelter@gmail.com", subject: "#{@asunto}")
+    mail(to: "nahuelternouski@gmail.com", subject: "#{@asunto}")
   end
 end
