@@ -22,9 +22,9 @@
 <body>
 
     <div class="idiomas">
-        <%= link_to image_tag("http://gdurl.com/FBKY", height: '25', alt: "Español"), root_path(locale: :es) %>
+        <%= link_to image_tag("http://gdurl.com/FBKY", height: '25', alt: "Español"), url_for(locale: :es) %>
         &nbsp;&nbsp;
-        <%= link_to image_tag("http://gdurl.com/u4jQ", height: '25', alt: "Ingles"), root_path(locale: :en) %>
+        <%= link_to image_tag("http://gdurl.com/u4jQ", height: '25', alt: "Ingles"), url_for(locale: :en) %>
     </div>
 
     <nav class="navbar navbar-custom navbar-fixed-top">
