@@ -8,7 +8,6 @@
 		<br>
 			<i class="fa fa-angle-down animacion-flecha" aria-hidden="true" ></i>
 		</h3>
-
 	</div>
 </div>
 
@@ -28,16 +27,16 @@
 
 <div id="2da" class="segunda-parte txt-blanco">
 	<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 txt-introduccion-sobreMi">
-		<h2> Sobre mi </h2>
-		<p> Soy estudiante de Ingeniería en Computación, actualmente cursado 4to año en la Universidad Nacional de La Plata. Me interesa la programación, mi pasatiempo es hacer proyectos en multimedia con una diversa cantidad de programas incluyendo 3D. </p>
+		<h2> <%= t 'sobre_mi.titulo' %> </h2>
+		<p> <%= t 'sobre_mi.info' %> </p>
 	</div>
 	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
 		<%= image_tag("http://gdurl.com/FhdA", class: "mi-foto img-responsive center-block") %>
 	</div>
 	<div class="col-lg-5 col-md-4 col-sm-6 col-xs-6 txt-introduccion-Datos">
-		<h2> Datos </h2>
-		<strong>Nombre Completo:</strong> <br> <p>Sebastian Nahuel Ternouski</p>
-		<strong>Edad:</strong> <br> <p><%= @cantidad_de_anios %> años</p>
+		<h2> <%= t 'datos.titulo' %> </h2>
+		<strong><%= t 'datos.nombre_completo' %>:</strong> <br> <p>Sebastian Nahuel Ternouski</p>
+		<strong><%= t 'datos.edad' %>:</strong> <br> <p><%= @cantidad_de_anios %> <%= t 'datos.años' %></p>
 	</div>
 </div>
 
@@ -77,7 +76,7 @@
 	</div>
 
 	<div class="margenes col-md-4 col-sm-12">
-		<h3 class="centrado">Lenguajes de Programación</h3> <br>
+		<h3 class="centrado"> <%= t 'programas.lenguajes' %> </h3> <br>
 		<div class="col-md-6 col-sm-6 col-xs-6">
 			<p class="conocimiento izquierda">
 				Ruby on rails <br>
@@ -119,20 +118,20 @@
 	</div>
 
 	<div class="margenes col-md-4 col-sm-12">
-		<h3 class="centrado">Idiomas</h3> <br>
+		<h3 class="centrado"> <%= t 'idioma.titulo' %> </h3> <br>
 		<div class="col-md-6 col-sm-6 col-xs-6">
 			<p class="conocimiento izquierda">
-				Español (nativo) <br>
-				Ingles (9 años)<br>
-				Portugues (7 años) <br>
+				<%= t 'idioma.español' %> <br>
+				<%= t 'idioma.ingles' %> <br>
+				<%= t 'idioma.portugues' %> <br>
 			</p>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-6 derecha">
 			<div class="calificacion"><!-- Español -->
-				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
 			</div>
 			<div class="calificacion"><!-- Ingles -->
-				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
 			</div>
 			<div class="calificacion"><!-- Portugues -->
 				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
@@ -143,15 +142,15 @@
 
 
 <div class="cuarta-parte centrado">
-	<h2>Proyectos</h2> <br>
+	<h2> <%= t 'proyecto.titulo' %> </h2> <br>
 
 	<a href="https://github.com/nternouski/my-web">
 		<div class="col-md-4 col-sm-6 col-xs-12 sin-padding">
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="http://gdurl.com/QirV">
 				<div class="txt-desenfoque">
-					<h2>Mi pagina personal</h2>
-					<p>Utilizando ruby on rails. Diseño responsivo. Año 2017.</p>
+					<h2><%= t 'proyecto.pagina.titulo' %></h2>
+					<p><%= t 'proyecto.pagina.desc' %></p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -165,8 +164,8 @@
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="http://gdurl.com/A4oa">
 				<div class="txt-desenfoque">
-					<h2>Pagina web Gauchada</h2>
-					<p>Trabajo grupal con el pseudo nombre de MasterBranch, utilizando Ruby on rails, catedra Ingeniería en Software. Año 2016.</p>
+					<h2><%= t 'proyecto.gauchada.titulo' %></h2>
+					<p><%= t 'proyecto.gauchada.desc' %></p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -180,8 +179,8 @@
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="http://gdurl.com/nQ0D">
 				<div class="txt-desenfoque">
-					<h2>Diseño 3D</h2>
-					<p>Software utilizado: Blender. Año 2015.</p>
+					<h2><%= t 'proyecto.diseño3d.titulo' %></h2>
+					<p><%= t 'proyecto.diseño3d.desc' %></p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -195,9 +194,11 @@
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="http://gdurl.com/Lpnb">
 				<div class="txt-desenfoque">
-					<h2>Juego Fix Felix</h2>
-					<p>Trabajo grupal, realizado en Java, catedra Taller de Lenguaje 2. Año 2015.<br><br>
-					Si se requiere el codigo, solicitar autorizacion via mail.</p>
+					<h2><%= t 'proyecto.fix_felix.titulo' %></h2>
+					<p><%= t "proyecto.fix_felix.desc1" %>
+						<br><br>
+						<%= t "proyecto.fix_felix.desc2" %>
+					</p>					
 				</div>
 				<figcaption>
 				<a ></a>
@@ -211,8 +212,8 @@
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="http://gdurl.com/tjkz">
 				<div class="txt-desenfoque">
-					<h2>Banner para facebook</h2>
-					<p>Banner para la pagina de facebook Humor Matematico con el seudonombre Delta X, realizado en Photoshop. Año 2015.</p>
+					<h2><%= t 'proyecto.banner.titulo' %></h2>
+					<p><%= t 'proyecto.banner.desc' %></p>
 				</div>
 				<figcaption>
 				<a ></a>
@@ -226,8 +227,8 @@
 			<figure class="img-desenfoque">
 				<img class="img-responsive" src="https://placehold.it/800x500">
 				<div class="txt-desenfoque">
-					<h2>Espirales</h2>
-					<p>En desarrollo. Año 2017.</p>
+					<h2><%= t 'proyecto.espirales.titulo' %></h2>
+					<p><%= t 'proyecto.espirales.desc' %></p>
 				</div>
 				<figcaption>
 				<a ></a>

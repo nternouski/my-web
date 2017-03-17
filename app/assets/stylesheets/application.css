@@ -31,6 +31,13 @@ body {
     margin: 0 0 60px; /* bottom has to be the same as footer height */
 }
 
+.idiomas{
+  background: none;
+  text-align: right;
+  right: 30px; top: 90px;
+  position: absolute;
+}
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);

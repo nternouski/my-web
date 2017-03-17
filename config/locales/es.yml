@@ -1,4 +1,52 @@
 es:
+  link_txt:
+    inicio: "inicio"
+    contacto: "contacto"
+  sobre_mi:
+    titulo: "Sobre mi"
+    info: "Soy estudiante de Ingeniería en Computación, actualmente cursado 4to año en la Universidad Nacional de La Plata. Me interesa la programación, mi pasatiempo es hacer proyectos en multimedia con una diversa cantidad de programas incluyendo 3D."
+  datos:
+    titulo: "Datos"
+    nombre_completo: "Nombre completo"
+    edad: "Edad"
+    años: "años"
+  programas:
+    lenguajes: "Lenguajes de programación"
+  idioma:
+    titulo: "Idiomas"
+    español: "Español (nativo)"
+    ingles: "Ingles (9 años)"
+    portugues: "Portugues (7 años)"
+  proyecto:
+    titulo: "Proyectos"
+    pagina:
+      titulo: "Mi página personal"
+      desc: "Utilizando ruby on rails. Diseño responsivo. Año 2017."
+    gauchada:
+      titulo: "Pagina web Gauchada"
+      desc: "Trabajo grupal con el pseudo nombre de MasterBranch, utilizando Ruby on rails, catedra Ingeniería en Software. Año 2016."
+    diseño3d:
+      titulo: "Diesño 3D"
+      desc: "Software utilizado: Blender. Año 2015."
+    fix_felix:
+      titulo: "Juego Fix it Felix"
+      desc1: "Trabajo grupal, realizado en Java, catedra Taller de Lenguaje 2. Año 2015."
+      desc2: "Si se requiere el codigo, solicitar autorizacion via mail."
+    banner:
+      titulo: "Banner para facebook"
+      desc: "Banner para la pagina de facebook Humor Matemático con el seudonombre Delta X, realizado en Photoshop. Año 2015."
+    espirales:
+      titulo: "Espirales"
+      desc: "En desarrollo. Año 2017."
+  contacto:
+    titulo: "Contacto"
+    desc: "Para comunicarse conmigo o para solicitar CV, no dude en escribirme."
+    nomb: "Nombre y Apellido"
+    asunto: "Asunto"
+    email: "Email"
+    mensaje: "Escribe tu mensaje aquí"
+    enviar: "Enviar"
+
   activerecord:
     attributes:
       request:

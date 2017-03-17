@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nahuel Ternouski - Web</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <title>Nahuel Ternouski - Web</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
- 	<%= favicon_link_tag('http://gdurl.com/WKtx') %> <!-- logo.png -->
+    <%= favicon_link_tag('http://gdurl.com/WKtx') %> <!-- logo.png -->
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,6 +21,12 @@
 </head>
 <body>
 
+    <div class="idiomas">
+        <%= link_to image_tag("http://gdurl.com/FBKY", height: '25', alt: "Español"), root_path(locale: :es) %>
+        &nbsp;&nbsp;
+        <%= link_to image_tag("http://gdurl.com/u4jQ", height: '25', alt: "Ingles"), root_path(locale: :en) %>
+    </div>
+
     <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -32,15 +38,16 @@
             <div class="collapse navbar-collapse navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <%= link_to "inicio", root_path, class: "barra-blanco barra" %>
+                        <%= link_to t('link_txt.inicio'), root_path, class: "barra-blanco barra" %>
                     </li>
                     <li>
-                        <%= link_to "Contacto", contact_mail_path, class: "barra-blanco barra" %>
+                        <%= link_to t('link_txt.contacto'), contact_mail_path, class: "barra-blanco barra" %>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
+
 
 	<%= yield %>
 
