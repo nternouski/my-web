@@ -3,8 +3,8 @@ es:
     inicio: "inicio"
     contacto: "contacto"
   sobre_mi:
-    titulo: "Sobre mi"
-    info: "Soy estudiante de Ingeniería en Computación, actualmente cursado 4to año en la Universidad Nacional de La Plata. Me interesa la programación, mi pasatiempo es hacer proyectos en multimedia con una diversa cantidad de programas incluyendo 3D."
+    titulo: "Sobre mí"
+    info: "Soy estudiante de Ingeniería en Computación, actualmente cursando 4to año en la Universidad Nacional de La Plata. Me interesa la programación. Unos de mis pasatiempos es hacer proyectos multimedia utilizando una diversa cantidad de programas, incluyendo herramientas de modelado 3D."
   datos:
     titulo: "Datos"
     nombre_completo: "Nombre completo"
@@ -15,26 +15,26 @@ es:
   idioma:
     titulo: "Idiomas"
     español: "Español (nativo)"
-    ingles: "Ingles (9 años)"
-    portugues: "Portugues (7 años)"
+    ingles: "Inglés (9 años)"
+    portugues: "Portugués (7 años)"
   proyecto:
     titulo: "Proyectos"
     pagina:
       titulo: "Mi página personal"
-      desc: "Utilizando ruby on rails. Diseño responsivo. Año 2017."
+      desc: "Utilizando Ruby on Rails. Diseño responsivo. Año 2017."
     gauchada:
       titulo: "Pagina web Gauchada"
-      desc: "Trabajo grupal con el pseudo nombre de MasterBranch, utilizando Ruby on rails, catedra Ingeniería en Software. Año 2016."
+      desc: "Trabajo grupal con el nombre de MasterBranch, utilizando Ruby on Rails, cátedra Ingeniería en Software. Año 2016."
     diseño3d:
-      titulo: "Diesño 3D"
+      titulo: "Diseño 3D"
       desc: "Software utilizado: Blender. Año 2015."
     fix_felix:
       titulo: "Juego Fix it Felix"
-      desc1: "Trabajo grupal, realizado en Java, catedra Taller de Lenguaje 2. Año 2015."
-      desc2: "Si se requiere el codigo, solicitar autorizacion via mail."
+      desc1: "Trabajo grupal, realizado en Java, cátedra Taller de Lenguaje 2. Año 2015."
+      desc2: "Si se requiere el código, solicitar autorización vía mail."
     banner:
-      titulo: "Banner para facebook"
-      desc: "Banner para la pagina de facebook Humor Matemático con el seudonombre Delta X, realizado en Photoshop. Año 2015."
+      titulo: "Banner para Facebook"
+      desc: "Banner para la página de Facebook Humor Matemático con el seudonombre Delta X, realizado en Photoshop. Año 2015."
     espirales:
       titulo: "Espirales"
       desc: "En desarrollo. Año 2017."

@@ -25,7 +25,7 @@ en:
     contacto: "contact"
   sobre_mi:
     titulo: "About me"
-    info: "I am a student of Computer Engineering, currently studying 4th year at the National University of La Plata. I am interested in programming, my hobby is to do projects in multimedia with a diverse amount of programs in 3D."
+    info: "I am a Computer Engineering student, currently taking the fourth year at the National University of La Plata. I am interested in programming and one of my hobbies is creating multimedia projects using a diverse amount of 3D modelling programs."
   datos:
     titulo: "Info"
     nombre_completo: "Full name"
@@ -42,28 +42,28 @@ en:
     titulo: "Projects"
     pagina:
       titulo: "My personal web page"
-      desc: "Using ruby on rails. Responsive design. Year 2017."
+      desc: "Using Ruby on Rails. Responsive design. 2017."
     gauchada:
       titulo: "Web page Gauchada"
-      desc: "Group work with the pseudo name of MasterBranch, using Ruby on rails, Software engineering course. Year 2016."
+      desc: "Group assignment under the name of MasterBranch, written in Ruby on Rails, Software engineering course. 2016."
     diseño3d:
       titulo: "3D Design"
-      desc: "With Blender. Year 2015."
+      desc: "Using Blender. Year 2015."
     fix_felix:
       titulo: "Game Fix it Felix"
-      desc1: "Group work, using plataform of Java, Language Workshop 2's course. Year 2015."
-      desc2: "If you want view the source, request authorization by mail."
+      desc1: "Group assignment, written in  Java, Language Workshop 2 course. 2015."
+      desc2: "If you want to read the source, write me an email."
     banner:
-      titulo: "Banner for facebook"
-      desc: "Banner for web page of facebook, Mathematical Humor, with the pseudo name of Delta X, on Photoshop. Year 2015."
+      titulo: "Banner for Facebook Page"
+      desc: "Banner for Facebook page, called Humor Matemático, under the name of Delta X, created using Photoshop. 2015."
     espirales:
       titulo: "Spirals"
-      desc: "Developing. Year 2017."
+      desc: "Developing. 2017."
   contacto:
     titulo: "Contact"
-    desc: "For contact me or request CV, you can write me a email in this page."
+    desc: "To contact me or request my résumé, you can contact me below."
     nomb: "Full name"
     asunto: "Subject"
     email: "Email"
-    mensaje: "Write your mesaje here"
+    mensaje: "Write your message here"
     enviar: "Send"
