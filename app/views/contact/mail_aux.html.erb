@@ -20,6 +20,27 @@
 			<br>
 		</div>
 		<div class="col-lg-10 col-lg-offset-1 text-center">
+			<%= form_tag({controller: "contact", action: "mail"}, method: "get")  do %>
+				<div class="form-group col-lg-6 col-md-12">
+					<%= text_field_tag :nombre, nil, placeholder: t('contacto.nomb'), :value => params[:nombre] %>
+				</div>
+				<div class="form-group col-lg-6 col-md-12">
+					<%= text_field_tag :asunto, nil, placeholder: t('contacto.asunto'), :value => params[:asunto] %>
+				</div>
+				<div class="form-group col-lg-12 col-md-12">
+					<%= text_field_tag :email, nil, placeholder: t('contacto.email'), :value => params[:email] %>
+				</div>
+				<div class="form-group col-lg-12 col-md-12">
+					<%= text_area_tag :mensaje, nil, rows: "3", placeholder: t('contacto.mensaje'), :value => params[:mensaje] %>
+				</div>
+				<div>
+					<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+					<div class="g-recaptcha" data-theme="dark" data-sitekey="6LcW_xUUAAAAABIxd-2630pDETX5JdAVmiITvBrM"></div>
+				</div>
+				<div class="form-group">
+					<%= submit_tag t('contacto.enviar'), :class => 'boton' %>
+				</div>
+			<% end %>
 			<br>
 			<p class="texto-blanco informacion-contactos">
 				<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>	nahuelternouski@gmail.com<br>
@@ -27,11 +48,7 @@
 				<a href="https://github.com/nternouski" class="barra-blanco"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>	
 				&emsp;&emsp;&emsp;&emsp;	
 				<a href="http://facebook.com/nahuel.ter" class="barra-blanco"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-				&emsp;&emsp;&emsp;&emsp;	
-				<a href="https://www.linkedin.com/in/nahuel-ternouski-b1072799" class="barra-blanco"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 			</p>
-			<br>
-			<br>
 		</div>
 	</div><! --/row -->
 </div><! --/container -->
