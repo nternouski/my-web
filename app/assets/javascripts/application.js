@@ -36,8 +36,6 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
-$(document).ready(function () {
-
-    $(".player").mb_YTPlayer();
-
-});
+// $(document).ready(function () {
+//     $(".playerVideo").mb_YTPlayer();
+// });

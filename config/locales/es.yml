@@ -4,14 +4,14 @@ es:
     contacto: "contacto"
   sobre_mi:
     titulo: "Sobre mí"
-    info: "Soy estudiante de Ingeniería en Computación, actualmente cursando 4to año en la Universidad Nacional de La Plata. Me interesa la programación. Unos de mis pasatiempos es hacer proyectos multimedia utilizando una diversa cantidad de programas, incluyendo herramientas de modelado 3D."
+    info: "Soy estudiante de Ingeniería en Computación, actualmente cursando el últmo año en la Universidad Nacional de La Plata. Me interesa la programación. Unos de mis pasatiempos es hacer proyectos multimedia utilizando una diversa cantidad de programas, incluyendo herramientas de modelado 3D."
   datos:
     titulo: "Datos"
     nombre_completo: "Nombre completo"
     edad: "Edad"
     años: "años"
   programas:
-    lenguajes: "Lenguajes de programación"
+    lenguajes: "Lenguajes de programación y otros"
   idioma:
     titulo: "Idiomas"
     español: "Español (nativo)"
