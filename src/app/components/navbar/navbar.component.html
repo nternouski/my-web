@@ -1,0 +1,20 @@
+<mat-toolbar color="accent">
+	<button *ngFor="let item of links" mat-button routerLink="{{item.link}}">
+		{{ item.name | translate }}
+	</button>
+
+	<span fxFlex="auto"></span>
+
+	<button mat-icon-button [matMenuTriggerFor]="menu">
+		<mat-icon>language</mat-icon>
+	</button>
+</mat-toolbar>
+
+
+
+<mat-menu #menu="matMenu" [overlapTrigger]="false">
+	<button *ngFor="let item of langs" mat-menu-item (click)="changeLang(item.name)">
+		<img style="height: 1em" src="{{'/assets/img/lang/'+ item.img}}" alt="{{item.name | translate}}">
+		<span>{{ item.name | translate }}</span>
+	</button>
+</mat-menu>

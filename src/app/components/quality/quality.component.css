@@ -1,0 +1,14 @@
+.quality-stars {
+	transition: letter-spacing 0.5s ease;
+	letter-spacing: 4px;
+	min-width: 140px;
+}
+
+.quality-stars:hover {
+	letter-spacing: 10px;
+}
+
+.quality-padding {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}

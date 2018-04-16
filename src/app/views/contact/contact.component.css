@@ -1,0 +1,25 @@
+.img-contacto {
+	background-image: url("/assets/img/contact/map2.png");
+	width: 100%;
+	height: 100%;
+}
+
+.contact-mat-card-size {
+	max-width: 55em;
+}
+
+.contact-div-links {
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+@media (max-width: 959px) {
+	.contact-mat-card-size {
+		max-width: 25em;
+	}
+
+	.contact-div-links {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
