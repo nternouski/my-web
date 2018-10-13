@@ -12,7 +12,7 @@ export class WelcomeComponent {
 	age: number;
 
 	constructor() {
-		const timeDiff = Math.abs(Date.now() - this.birthDate.getMilliseconds());
-		this.age = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365);
+		const ageDate = new Date(Date.now() - this.birthDate.getTime()); // miliseconds from epoch
+		this.age = Math.abs(ageDate.getUTCFullYear() - 1970);
 	}
 }
