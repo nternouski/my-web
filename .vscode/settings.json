@@ -1,0 +1,16 @@
+{
+	"git.rebaseWhenSync": true,
+	"editor.formatOnSave": true,
+	"cSpell.diagnosticLevel": "Hint",
+	"cSpell.language": "en,es",
+	"cSpell.words": ["acordarweb", "downlevel", "firestore", "shorturl", "signup"],
+	"npm.enableScriptExplorer": true,
+	"rest-client.followredirect": false,
+	"editor.rulers": [100],
+	"npm.includeDirectories": [
+		"webapp",
+		"functions",
+		"shared"
+	],
+	"prettier.useTabs": true
+}
