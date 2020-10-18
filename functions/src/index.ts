@@ -5,7 +5,7 @@ import * as admin from "firebase-admin";
 
 if (process.env.NODE_ENV === "development") {
 	process.env.GOOGLE_APPLICATION_CREDENTIALS = resolve(
-		"./nternouski-firebase-adminsdk-p6za3-f78c63bafd.json"
+		"./nternouski-firebase-adminsdk-p6za3-335e683282.json"
 	);
 }
 admin.initializeApp();
