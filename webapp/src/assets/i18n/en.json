@@ -1,0 +1,71 @@
+{
+	"welcome": {
+		"about_me": {
+			"title": "About me",
+			"info": "I am a Computer Engineer, degree in the National University of La Plata. I am interested in programming and one of my hobbies is creating multimedia projects using a diverse amount of 3D modelling programs."
+		},
+		"data": {
+			"title": "Info",
+			"full_name": "Full name",
+			"age": "Years old",
+			"years_old": "years"
+		},
+		"knowledge": {
+			"language_programing": "Programming languages and Others",
+			"language": {
+				"title": "Languages",
+				"spanish": "Spanish (native)",
+				"english": "English (9 years)",
+				"portugues": "Portuguese (7 years)"
+			}
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"my-web": {
+			"title": "My personal web page",
+			"desc": "Using Angular 5. Responsive design. Update 2018."
+		},
+		"gauchada": {
+			"title": "Web page Gauchada",
+			"desc": "Group assignment under the name of MasterBranch, written in Ruby on Rails, Software engineering course. 2016."
+		},
+		"design3d": {
+			"title": "3D Design",
+			"desc": "Using Blender. Year 2015."
+		},
+		"fix_felix": {
+			"title": "Game Fix it Felix",
+			"desc": "Group assignment, written in  Java, Language Workshop 2 course. 2015."
+		},
+		"banner": {
+			"title": "Banner for Facebook Page",
+			"desc": "Banner for Facebook page, called Humor Matemático, under the name of Delta X, created using Photoshop. 2015."
+		},
+		"espirales": {
+			"title": "Spirals animation",
+			"desc": "Spiral processes associated with popular education, created using After effect. 2017."
+		}
+	},
+	"navbar": {
+		"links": {
+			"home": "Home",
+			"contact": "Contact"
+		},
+		"langs": {
+			"spanish": "Spanish",
+			"english": "English"
+		}
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "To contact me or request my resume, you can contact me below.",
+		"form": {
+			"name": "Full name",
+			"subject": "Subject",
+			"email": "Email",
+			"msg": "Write your message here",
+			"send": "Send"
+		}
+	}
+}

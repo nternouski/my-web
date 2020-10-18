@@ -1,0 +1,28 @@
+{
+	"extends": "../tsconfig.json",
+	"compileOnSave": false,
+	"compilerOptions": {
+		"outDir": "./dist/out-tsc",
+		"baseUrl": "./",
+		"paths": {
+			"@models": ["../shared/models/index"],
+			"@shared": ["../shared/index.ts"],
+			"@services/*": ["./src/app/services/*"],
+			"@components/*": ["./src/app/components/*"],
+			"@pipes/*": ["./src/app/pipes/*"]
+		},
+		"module": "es2020",
+		"target": "es2015",
+		"typeRoots": ["node_modules/@types"],
+		"downlevelIteration": true,
+		"lib": ["es2019", "dom"],
+		"moduleResolution": "node",
+		"importHelpers": true
+	},
+	"angularCompilerOptions": {
+		"fullTemplateTypeCheck": true,
+		"strictInjectionParameters": true,
+		//TODO: hacer esto escricto
+		"strictTemplates": false
+	}
+}

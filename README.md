@@ -1,27 +1,23 @@
-# MyWeb
+# Estilo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+-   Usar los estilos marcados en .editorconfig y tslint.
+-   Usar la extensión EditorConfig for VS code para mantener los estilos de .editorconfig
+-   Usar la extensión de vscode prettier.
+-   Usar formatOnSave tal como esta en .vsconfig/settings.json
+-   Usar la extensión de Code Spell Checker (+ spanish)
+-   Favicon va como esta, en src/favicon.ico, no se corre a img
+-   No poner el "loading" en el titulo
+-   Las opciones de configuración que no cambian, no van a environments, sino a core/services/config.service
+-   TRATAR DE EVITAR LAS FUENTAS CUSTOM !!!! (excepto las de material)
+-   no tocar archivos de configuracion. Si el linter les tira un error, no cambien el linter, arreglen el error
+-   no agregar paquetes. Yo tengo que estar involucrado en la decisión de agregar cada paquete
+-   la medida de tamaño es "em" no "px"
+-   no tocar los estilos generales salvo que este justificado
+-   no usar h1 h2 etc.... usar [las tipografías](https://material.angular.io/guide/typography)
+-   SIEMPRE USAR UBSERBABLES AL MOSTRAR VARIABLES EN EL HTML
 
-## Development server
+# WebPack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`ng build --prod --stats-json`
+y después
+`npx webpack-bundle-analyzer dist/stats.json`

@@ -1,0 +1,64 @@
+<div class="mat-typography">
+	<div class="imagen-inicio">
+		<div style="background: none; width: 100%; padding-top: 20vh;">
+			<div fxLayout="column" fxLayoutAlign="center center" style="color: white;">
+				<img class="logo" src="assets/img/logo/logo.svg" alt="Logo personal" />
+				<strong class="mat-display-2">
+					Sebastian Nahuel Ternouski
+				</strong>
+				<mat-icon class="welcome-arrow" style="font-size:2em;">
+					keyboard_arrow_down
+				</mat-icon>
+			</div>
+		</div>
+	</div>
+
+	<!-- PARA EL VIDEO-->
+
+	<!-- <section class="video-section">
+	<div class="inicio-inicio">
+		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=dIntqJvyG0Y',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+		<iframe id="bgndVideo" class="video-inicio video-section" src="https://www.youtube.com/embed/dIntqJvyG0Y?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=dIntqJvyG0Y" frameborder="0" allowfullscreen></iframe>
+		<div class="banner-inicio">
+			<%= image_tag("http://gdurl.com/cFsx", class: "logo", :alt => "logo personal", title:"Logo") %>
+			<h3 class="txt-nombre"> Sebastian Nahuel Ternouski</h3>
+		</div>
+  	</div>
+</section> -->
+
+	<!-- PARA EL VIDEO-->
+
+	<div
+		fxLayout="row"
+		fxLayout.lt-md="column"
+		fxLayoutAlign="center center"
+		fxLayoutGap="2em"
+		style="color: white; padding: 100px 50px; background-color: #005a31;"
+	>
+		<div [ngStyle.gt-sm]="{ 'text-align': 'right' }" fxFlex="40">
+			<p class="mat-headline">{{ "welcome.about_me.title" | translate }}</p>
+			<p>{{ "welcome.about_me.info" | translate }}</p>
+		</div>
+		<img
+			style="	max-height: 180px; margin-bottom: 20px;	border: 4px solid #fff;	border-radius: 4px;"
+			src="assets/img/foto-perfil.png"
+			alt="Foto perfil"
+		/>
+		<div [ngStyle]="{ 'text-align': 'left' }" fxFlex="40">
+			<p class="mat-headline">{{ "welcome.data.title" | translate }}</p>
+			<strong>{{ "welcome.data.full_name" | translate }}:</strong>
+			<br />{{ name }}
+			<br />
+			<strong>{{ "welcome.data.age" | translate }}:</strong>
+			{{ age }} {{ "welcome.data.years_old" | translate }}.
+		</div>
+	</div>
+
+	<div class="tercera-parte">
+		<app-quality></app-quality>
+	</div>
+
+	<div class="cuarta-parte app-center-content">
+		<app-projects></app-projects>
+	</div>
+</div>

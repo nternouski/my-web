@@ -1,0 +1,55 @@
+<div
+	fxLayout="row"
+	fxLayout.lt-md="column"
+	fxLayoutAlign.lt-md="space-between center"
+	fxLayoutAlign="space-evenly start"
+>
+	<div class="quality-padding">
+		<div class="mat-title">{{ multimedia.name }}</div>
+		<ng-container
+			*ngTemplateOutlet="quality; context: { elements: multimedia.elements }"
+		></ng-container>
+	</div>
+	<div class="quality-padding">
+		<div class="mat-title">{{ languagePrograming.name | translate }}</div>
+		<ng-container
+			*ngTemplateOutlet="quality; context: { elements: languagePrograming.elements }"
+		></ng-container>
+	</div>
+	<div class="quality-padding">
+		<div class="mat-title">{{ language.name | translate }}</div>
+		<ng-container
+			*ngTemplateOutlet="qualityTranslate; context: { elements: language.elements }"
+		></ng-container>
+	</div>
+</div>
+
+<ng-template #quality let-elements="elements">
+	<div>
+		<ng-container *ngFor="let item of elements">
+			<div fxLayout="row" fxLayoutAlign="space-between center">
+				<div>{{ item.name }}</div>
+				<div class="quality-stars">
+					<ng-container *ngFor="let star of item.stars">
+						<mat-icon style="font-size: 1em">{{ star }}</mat-icon>
+					</ng-container>
+				</div>
+			</div>
+		</ng-container>
+	</div>
+</ng-template>
+
+<ng-template #qualityTranslate let-elements="elements">
+	<div>
+		<ng-container *ngFor="let item of elements">
+			<div fxLayout="row" fxLayoutAlign="space-between center">
+				<div>{{ item.name | translate }}</div>
+				<div class="quality-stars">
+					<mat-icon *ngFor="let star of item.stars" style="font-size: 1em">
+						{{ star }}
+					</mat-icon>
+				</div>
+			</div>
+		</ng-container>
+	</div>
+</ng-template>

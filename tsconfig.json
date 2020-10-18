@@ -1,15 +1,15 @@
 {
-  "compilerOptions": {
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "importHelpers": true,
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noFallthroughCasesInSwitch": true,
-    "strictNullChecks": true
-  }
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": false,
+		"downlevelIteration": true,
+		"importHelpers": true,
+		"removeComments": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noFallthroughCasesInSwitch": true,
+		"strictNullChecks": true
+	}
 }
