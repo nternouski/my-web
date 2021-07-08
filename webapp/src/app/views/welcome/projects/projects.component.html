@@ -7,7 +7,7 @@
 				<div class="txt-desenfoque">
 					<h2 class="mat-body-1">{{ titlePath(project.title) | translate }}</h2>
 					<p class="mat-caption">{{ descPath(project.title) | translate }}</p>
-					<span matTooltip="{{ project.link }}">
+					<span [matTooltip]="project.link">
 						<a mat-icon-button href="{{ project.link }}" style="color: #fff">
 							<mat-icon>open_in_new</mat-icon>
 						</a>
