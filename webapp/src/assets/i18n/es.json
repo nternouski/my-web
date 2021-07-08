@@ -6,7 +6,7 @@
 		},
 		"data": {
 			"title": "Datos",
-			"full_name": "Nombre completo",
+			"full_name": "Mi Nombre",
 			"age": "Edad",
 			"years_old": "años"
 		},
@@ -24,11 +24,7 @@
 		"title": "Proyectos",
 		"my-web": {
 			"title": "Mi página personal",
-			"desc": "Utilizando Angular 5. Diseño responsivo. Actualización Año 2018."
-		},
-		"gauchada": {
-			"title": "Pagina web Gauchada",
-			"desc": "Trabajo grupal con el nombre de MasterBranch, utilizando Ruby on Rails, cátedra Ingeniería en Software. Año 2016."
+			"desc": "Utilizando Angular 10. Diseño responsivo. Actualización Año 2021."
 		},
 		"design3d": {
 			"title": "Diseño 3D",
@@ -45,6 +41,22 @@
 		"espirales": {
 			"title": "Animación Espirales",
 			"desc": "Procesos en forma de espirales asociado a la educación popular, realizado en After effect. Año 2017."
+		},
+		"acordar-branding": {
+			"title": "Manual de Diseño",
+			"desc": "Diseño de la marca Acordar, realizado en Adobe InDesign. Año 2017."
+		},
+		"acordar-draft": {
+			"title": "Video Borrador - Acordar",
+			"desc": "Video borrador para explicar que es Acordar, realizado en Adobe After Effect. Año 2018."
+		},
+		"mauna-story": {
+			"title": "Stories - Mauna",
+			"desc": "Diseño de stories para instagram hecho en After Effect. Año 2020."
+		},
+		"elremanso": {
+			"title": "El Remanso - Mauna",
+			"desc": "Video sobre la ubicación de El Remanso crado con After Effect. Año 2021."
 		}
 	},
 	"navbar": {

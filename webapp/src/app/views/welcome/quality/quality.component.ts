@@ -9,15 +9,18 @@ export class QualityComponent {
 	multimedia = {
 		name: "Multimedia",
 		elements: [
-			{ name: "Adobe Illustrator", stars: ["star", "star", "star", "star", "star_border"] },
 			{ name: "Adobe After Effect", stars: ["star", "star", "star", "star", "star_border"] },
-			{ name: "Adobe Photoshop", stars: ["star", "star", "star", "star", "star_border"] },
+			{ name: "Adobe Illustrator", stars: ["star", "star", "star", "star", "star_border"] },
 			{
-				name: "Adobe Audition",
+				name: "Adobe Photoshop",
 				stars: ["star", "star", "star", "star_border", "star_border"]
 			},
 			{
-				name: "Adobe Premiere",
+				name: "Adobe InDesign",
+				stars: ["star", "star", "star", "star_border", "star_border"]
+			},
+			{
+				name: "Adobe Audition",
 				stars: ["star", "star", "star_border", "star_border", "star_border"]
 			},
 			{
@@ -30,16 +33,14 @@ export class QualityComponent {
 	languagePrograming = {
 		name: "welcome.knowledge.language_programing",
 		elements: [
-			{ name: "Latex", stars: ["star", "star", "star", "star", "star"] },
-			{ name: "Angular", stars: ["star", "star", "star", "star", "star_border"] },
+			{ name: "Node", stars: ["star", "star", "star", "star", "star"] },
+			{ name: "Angular", stars: ["star", "star", "star", "star", "star"] },
+			{ name: "Git", stars: ["star", "star", "star", "star", "star"] },
+			{ name: "GCP", stars: ["star", "star", "star", "star", "star_border"] },
 			{ name: "CSS/HTML/JS", stars: ["star", "star", "star", "star", "star_border"] },
+			{ name: "Python", stars: ["star", "star", "star", "star_border", "star_border"] },
 			{ name: "Bash ", stars: ["star", "star", "star", "star_border", "star_border"] },
-			{ name: "C/C++", stars: ["star", "star", "star_border", "star_border", "star_border"] },
-			{
-				name: "Ruby on Rails",
-				stars: ["star", "star", "star_border", "star_border", "star_border"]
-			},
-			{ name: "MATLAB", stars: ["star", "star", "star_border", "star_border", "star_border"] }
+			{ name: "C/C++", stars: ["star", "star", "star_border", "star_border", "star_border"] }
 		]
 	};
 

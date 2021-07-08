@@ -28,7 +28,7 @@
 	<div>
 		<ng-container *ngFor="let item of elements">
 			<div fxLayout="row" fxLayoutAlign="space-between center">
-				<div>{{ item.name }}</div>
+				<div style="padding-right: 1em;">{{ item.name }}</div>
 				<div class="quality-stars">
 					<ng-container *ngFor="let star of item.stars">
 						<mat-icon style="font-size: 1em">{{ star }}</mat-icon>
