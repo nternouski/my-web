@@ -12,6 +12,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
 @NgModule({
 	declarations: [WelcomeComponent, QualityComponent, ProjectsComponent],
 	imports: [

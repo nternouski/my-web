@@ -1,19 +1,24 @@
 <div class="mat-headline" style="text-align: center;">{{ title | translate }}</div>
 <div fxLayout="row wrap" fxLayoutAlign="center">
-	<ng-container *ngFor="let project of projects">
-		<div class="sin-padding projects-size">
-			<figure class="img-desenfoque">
-				<img [src]="'/assets/img/projects/' + project.img" />
-				<div class="txt-desenfoque">
-					<h2 class="mat-body-1">{{ titlePath(project.title) | translate }}</h2>
-					<p class="mat-caption">{{ descPath(project.title) | translate }}</p>
-					<span [matTooltip]="project.link">
-						<a mat-icon-button href="{{ project.link }}" style="color: #fff">
-							<mat-icon>open_in_new</mat-icon>
-						</a>
-					</span>
+	<div
+		*ngFor="let project of projects"
+		class="mat-elevation-z5"
+		style="background-color: white; color: black; border-radius: 0.5em; margin: 0.5em; max-width: 20em;"
+	>
+		<img
+			[src]="'/assets/img/projects/' + project.img"
+			style="width: 100%; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em"
+		/>
+		<div style="padding: 0em 0.7em 0.7em 0.7em;">
+			<div fxLayout="row" fxLayoutAlign="center center">
+				<div class="mat-title" style="margin: 0; font-weight: bolder;">
+					{{ titlePath(project.title) | translate }}
 				</div>
-			</figure>
+				<a mat-icon-button [href]="project.link"> <mat-icon>open_in_new</mat-icon> </a>
+			</div>
+			<div class="mat-body-1" style="text-align: center;">
+				{{ descPath(project.title) | translate }}
+			</div>
 		</div>
-	</ng-container>
+	</div>
 </div>

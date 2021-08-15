@@ -8,7 +8,6 @@ import { Component, Input } from "@angular/core";
 export class ProjectsComponent {
 	title = "projects.title";
 	projects = [
-		{ link: "https://github.com/nternouski/my-web", title: "my-web", img: "pag-web.png" },
 		{
 			link: "https://www.youtube.com/watch?v=cNLXL_kVEpY",
 			title: "design3d",

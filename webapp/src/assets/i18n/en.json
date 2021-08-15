@@ -22,13 +22,9 @@
 	},
 	"projects": {
 		"title": "Projects",
-		"my-web": {
-			"title": "My personal web page",
-			"desc": "Using Angular 12. Responsive design. Update 2021."
-		},
 		"design3d": {
 			"title": "3D Design",
-			"desc": "Using Blender. Year 2015."
+			"desc": "Concept Using Blender. Year 2015."
 		},
 		"fix_felix": {
 			"title": "Game Fix it Felix",
@@ -36,7 +32,7 @@
 		},
 		"banner": {
 			"title": "Banner for Facebook Page",
-			"desc": "Banner for Facebook page, called Humor Matemático, under the name of Delta X, created using Photoshop. 2015."
+			"desc": "Banner for Facebook page, called Humor Matemático, created using Photoshop. 2015."
 		},
 		"espirales": {
 			"title": "Spirals animation",

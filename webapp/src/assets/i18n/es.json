@@ -22,13 +22,9 @@
 	},
 	"projects": {
 		"title": "Proyectos",
-		"my-web": {
-			"title": "Mi página personal",
-			"desc": "Utilizando Angular 12. Diseño responsivo. Actualización Año 2021."
-		},
 		"design3d": {
 			"title": "Diseño 3D",
-			"desc": "Software utilizado: Blender. Año 2015."
+			"desc": "Prueba de Concepto. Software utilizado: Blender. Año 2015."
 		},
 		"fix_felix": {
 			"title": "Juego Fix it Felix",
@@ -36,7 +32,7 @@
 		},
 		"banner": {
 			"title": "Banner para Facebook",
-			"desc": "Banner para la página de Facebook Humor Matemático con el seudonombre Delta X, realizado en Photoshop. Año 2015."
+			"desc": "Banner para la página de Facebook Humor Matemático, realizado en Photoshop. Año 2015."
 		},
 		"espirales": {
 			"title": "Animación Espirales",
