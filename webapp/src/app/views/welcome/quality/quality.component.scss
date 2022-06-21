@@ -1,3 +1,5 @@
+@import "src/color-theme.scss";
+
 .quality-stars {
 	transition: letter-spacing 0.5s ease;
 	letter-spacing: 4px;
@@ -11,4 +13,26 @@
 .quality-padding {
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 576px) {
+	.image-tech {
+		height: 3.5em;
+		padding: 0.5em;
+		border: transparent 0.15em solid;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.image-tech {
+		height: 6em;
+		padding: 0.5em;
+		border: transparent 0.15em solid;
+	}
+}
+
+.image-tech:hover {
+	border: mat-color($accent) 0.15em solid;
+	border-radius: 1em;
+	transition: all 400ms ease-in-out;
 }

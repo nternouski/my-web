@@ -2,13 +2,7 @@
 	"welcome": {
 		"about_me": {
 			"title": "Sobre mí",
-			"info": "Soy Ingeniero en Computación, recibido en la Universidad Nacional de La Plata. Me interesa la programación. Unos de mis pasatiempos es hacer proyectos multimedia utilizando una diversa cantidad de programas, incluyendo herramientas de modelado 3D."
-		},
-		"data": {
-			"title": "Datos",
-			"full_name": "Mi Nombre",
-			"age": "Edad",
-			"years_old": "años"
+			"info": "Soy Ingeniero en Computación, recibido en la UNLP. Programador FullStack con diversas tecnologías. Unos de mis pasatiempos es hacer proyectos multimedia incluyendo herramientas de modelado 3D."
 		},
 		"knowledge": {
 			"language_programing": "Lenguajes de programación y otros",
@@ -16,7 +10,7 @@
 				"title": "Idiomas",
 				"spanish": "Español (nativo)",
 				"english": "Inglés (9 años)",
-				"portugues": "Portugués (7 años)"
+				"portugues": "Portugués (primaria)"
 			}
 		}
 	},
@@ -58,6 +52,8 @@
 	"navbar": {
 		"links": {
 			"home": "Inicio",
+			"projects": "Proyectos",
+			"technologies": "Tecnologías",
 			"contact": "Contacto"
 		},
 		"langs": {

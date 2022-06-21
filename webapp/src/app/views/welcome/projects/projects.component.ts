@@ -11,18 +11,17 @@ export class ProjectsComponent {
 		{
 			link: "https://www.youtube.com/watch?v=cNLXL_kVEpY",
 			title: "design3d",
-			img: "agua-3d.png"
+			img: "agua-3d.jpg"
 		},
 		{ link: "https://goo.gl/xHKhVe", title: "fix_felix", img: "fix-felix.png" },
-		{ link: "https://goo.gl/Kzbyry", title: "banner", img: "Ps-HM.png" },
+		{ link: "https://goo.gl/Kzbyry", title: "banner", img: "Ps-HM.jpg" },
 		{
 			link: "https://www.youtube.com/watch?v=KX1nlDv9_-0",
 			title: "espirales",
 			img: "espirales.png"
 		},
 		{
-			link:
-				"https://drive.google.com/file/d/1GWYDNdnA0nP2F8v1D8bUU4smXH559QaO/view?usp=sharing",
+			link: "https://drive.google.com/file/d/1GWYDNdnA0nP2F8v1D8bUU4smXH559QaO/view?usp=sharing",
 			title: "acordar-branding",
 			img: "branding-acordar.jpg"
 		},

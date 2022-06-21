@@ -1,3 +1,31 @@
+<div class="mat-headline" style="text-align: center;">
+	{{ "navbar.links.technologies" | translate }}
+</div>
+<div class="quality-padding" fxLayout="column">
+	<div
+		*ngFor="let elements of languagePrograming.elements"
+		fxLayout="row wrap"
+		fxLayoutAlign="center center"
+	>
+		<div fxFlex="50" fxFlex.lt-sm="90">
+			<a
+				*ngFor="let element of elements"
+				fxLayout="row"
+				fxLayoutAlign="center center"
+				fxFlex="auto"
+				[href]="element.url"
+				target="_blank"
+			>
+				<img
+					[src]="'/assets/img/technologies/' + element.img"
+					[alt]="element.name"
+					[attr.title]="element.name"
+					class="image-tech"
+				/>
+			</a>
+		</div>
+	</div>
+</div>
 <div
 	fxLayout="row"
 	fxLayout.lt-md="column"
@@ -11,12 +39,6 @@
 		></ng-container>
 	</div>
 	<div class="quality-padding">
-		<div class="mat-title">{{ languagePrograming.name | translate }}</div>
-		<ng-container
-			*ngTemplateOutlet="quality; context: { elements: languagePrograming.elements }"
-		></ng-container>
-	</div>
-	<div class="quality-padding">
 		<div class="mat-title">{{ language.name | translate }}</div>
 		<ng-container
 			*ngTemplateOutlet="qualityTranslate; context: { elements: language.elements }"
@@ -25,31 +47,23 @@
 </div>
 
 <ng-template #quality let-elements="elements">
-	<div>
-		<ng-container *ngFor="let item of elements">
-			<div fxLayout="row" fxLayoutAlign="space-between center">
-				<div style="padding-right: 1em;">{{ item.name }}</div>
-				<div class="quality-stars">
-					<ng-container *ngFor="let star of item.stars">
-						<mat-icon style="font-size: 1em">{{ star }}</mat-icon>
-					</ng-container>
-				</div>
+	<ng-container *ngFor="let item of elements">
+		<div fxLayout="row" fxLayoutAlign="space-between center">
+			<div style="padding-right: 1em;">{{ item.name }}</div>
+			<div class="quality-stars">
+				<mat-icon *ngFor="let star of item.stars" style="font-size: 1em"> {{ star }} </mat-icon>
 			</div>
-		</ng-container>
-	</div>
+		</div>
+	</ng-container>
 </ng-template>
 
 <ng-template #qualityTranslate let-elements="elements">
-	<div>
-		<ng-container *ngFor="let item of elements">
-			<div fxLayout="row" fxLayoutAlign="space-between center">
-				<div>{{ item.name | translate }}</div>
-				<div class="quality-stars">
-					<mat-icon *ngFor="let star of item.stars" style="font-size: 1em">
-						{{ star }}
-					</mat-icon>
-				</div>
-			</div>
-		</ng-container>
+	<div *ngFor="let item of elements" fxLayout="row" fxLayoutAlign="space-between center">
+		<div style="padding-right: 1em;">{{ item.name | translate }}</div>
+		<div class="quality-stars">
+			<mat-icon *ngFor="let star of item.stars" style="font-size: 1em">
+				{{ star }}
+			</mat-icon>
+		</div>
 	</div>
 </ng-template>

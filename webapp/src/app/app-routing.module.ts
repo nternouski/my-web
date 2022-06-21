@@ -6,10 +6,6 @@ const routes: Routes = [
 	{
 		path: "welcome",
 		loadChildren: () => import("./views/welcome/welcome.module").then(i => i.WelcomeModule)
-	},
-	{
-		path: "contact",
-		loadChildren: () => import("./views/contact/contact.module").then(i => i.ContactModule)
 	}
 ];
 

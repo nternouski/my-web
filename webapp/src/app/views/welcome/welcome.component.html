@@ -1,66 +1,104 @@
-<div class="mat-typography">
-	<div class="imagen-inicio">
-		<div style="background: none; width: 100%; padding-top: 20vh;">
-			<div fxLayout="column" fxLayoutAlign="center center" style="color: white;">
-				<img class="logo" src="assets/img/logo/logo.svg" alt="Logo personal" />
-				<strong class="mat-display-2" style="text-align: center;">
-					Sebastian Nahuel Ternouski
+<mauna-scroll-button></mauna-scroll-button>
+<div>
+	<div id="home" fxLayout="column" fxLayoutAlign="center center" class="imagen-inicio">
+		<mat-toolbar color="accent" style="height: 2.5em;">
+			<button *ngFor="let item of links" mat-button (click)="scroll(item.link)">
+				{{ item.name | translate }}
+			</button>
+
+			<span fxFlex="auto"></span>
+
+			<button mat-icon-button [matMenuTriggerFor]="menu">
+				<mat-icon>language</mat-icon>
+			</button>
+		</mat-toolbar>
+
+		<mat-menu #menu="matMenu" [overlapTrigger]="false">
+			<button *ngFor="let item of langs" mat-menu-item (click)="changeLang(item)">
+				<img
+					style="height: 1em;"
+					[src]="'/assets/img/lang/' + item.img"
+					alt="{{ item.name | translate }}"
+				/>
+				<span style="padding-left: 0.5em;">{{ item.name | translate }}</span>
+			</button>
+		</mat-menu>
+		<div fxFlex="auto" fxLayoutAlign="center center" style="background: none; padding-top: 2em;">
+			<div
+				fxLayout="column"
+				fxLayoutAlign="center center"
+				style="color: white; text-align: center;"
+			>
+				<img class="photo-profile" src="assets/img/foto-perfil.jpg" alt="Foto perfil" />
+				<strong
+					[ngClass.gt-md]="{ 'mat-display-2': true }"
+					[ngClass]="{ 'mat-display-1': true }"
+					style=" font-weight: bold;"
+				>
+					{{ name }}
 				</strong>
-				<mat-icon class="welcome-arrow" style="font-size:2em;">
+				<div fxLayout="row" fxLayoutAlign="center center">
+					<p
+						fxFlex="50"
+						fxFlex.lt-sm="90"
+						[ngClass.gt-md]="{ 'mat-title': true }"
+						[ngClass]="{ 'mat-subheading-2': true }"
+					>
+						{{ "welcome.about_me.info" | translate }}
+					</p>
+				</div>
+				<mat-icon class="welcome-arrow" style="font-size:3em; user-select: none;">
 					keyboard_arrow_down
 				</mat-icon>
 			</div>
 		</div>
 	</div>
 
-	<!-- PARA EL VIDEO-->
-
-	<!--
-	<section class="video-section">
-	<div class="inicio-inicio">
-		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=dIntqJvyG0Y',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-		<iframe id="bgndVideo" class="video-inicio video-section" src="https://www.youtube.com/embed/dIntqJvyG0Y?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=dIntqJvyG0Y" frameborder="0" allowfullscreen></iframe>
-		<div class="banner-inicio">
-			<%= image_tag("http://gdurl.com/cFsx", class: "logo", :alt => "logo personal", title:"Logo") %>
-			<h3 class="txt-nombre"> Sebastian Nahuel Ternouski</h3>
-		</div>
-  	</div>
-	</section>
-	-->
-
-	<!-- PARA EL VIDEO-->
-
-	<div
-		fxLayout="row"
-		fxLayout.lt-md="column"
-		fxLayoutAlign="center center"
-		fxLayoutGap="2em"
-		style="color: white; padding: 100px 50px; background-color: #30c77e;"
-	>
-		<div [ngStyle.gt-sm]="{ 'text-align': 'right' }" fxFlex="40">
-			<p class="mat-headline">{{ "welcome.about_me.title" | translate }}</p>
-			<p>{{ "welcome.about_me.info" | translate }}</p>
-		</div>
-		<img
-			style="	max-height: 180px; margin-bottom: 20px;	border: 4px solid #fff;	border-radius: 4px;"
-			src="assets/img/foto-perfil.png"
-			alt="Foto perfil"
-		/>
-		<div [ngStyle]="{ 'text-align': 'left' }" fxFlex="40">
-			<p class="mat-headline">{{ "welcome.data.title" | translate }}</p>
-			<strong>{{ "welcome.data.full_name" | translate }}:</strong>
-			<br />{{ name }}
-			<br />
-			<strong>{{ "welcome.data.age" | translate }}:</strong>
-			{{ age }} {{ "welcome.data.years_old" | translate }}.
-		</div>
-	</div>
-
-	<div class="tercera-parte">
+	<div id="tech" style="background-color: black; color: white; padding: 2em 0em">
 		<app-quality></app-quality>
 	</div>
 
-	<div class="cuarta-parte">
+	<div
+		id="projects"
+		style="padding: 2em 0em; background-color: #30c77e; max-width: 100vw; color: white;"
+	>
 		<app-projects></app-projects>
+	</div>
+
+	<div
+		id="contact"
+		fxLayout="column"
+		fxLayoutAlign="space-evenly "
+		style="text-align: center; padding: 6em 0em;"
+	>
+		<p class="mat-headline" fxFlex="auto">{{ "contact.title" | translate }}</p>
+
+		<div fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 2em;">
+			<p class="mat-subheading-2" style="padding: 0em 2em;">
+				{{ "contact.subtitle" | translate }}
+			</p>
+			<div
+				class="mat-subheading-2"
+				style="padding: 0.2em 0.6em; border-radius: 0.5em; border: #30c77e 0.2em solid; font-weight: bold;"
+			>
+				nahuelternouski@gmail.com
+			</div>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="space-evenly center">
+			<a href="https://www.facebook.com/nternouski" style="text-decoration:none;" target="_blank">
+				<img style="width:2em" src="/assets/img/contact/facebook.svg" />
+			</a>
+			<a
+				href="https://www.linkedin.com/in/nternouski"
+				style="text-decoration:none;"
+				target="_blank"
+			>
+				<img style="width:2em" src="/assets/img/contact/linkedin.svg" />
+			</a>
+			<a href="https://github.com/nternouski" style="text-decoration:none;" target="_blank">
+				<img style="width:2em" src="/assets/img/contact/github.svg" />
+			</a>
+		</div>
 	</div>
 </div>

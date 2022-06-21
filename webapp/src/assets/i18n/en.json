@@ -2,13 +2,7 @@
 	"welcome": {
 		"about_me": {
 			"title": "About me",
-			"info": "I am a Computer Engineer, degree in the National University of La Plata. I am interested in programming and one of my hobbies is creating multimedia projects using a diverse amount of 3D modelling programs."
-		},
-		"data": {
-			"title": "Info",
-			"full_name": "My name",
-			"age": "Years old",
-			"years_old": "years"
+			"info": "I am a Computer Engineer, degree in the National University of La Plata. Developer as FullStack, one of my hobbies is creating multimedia projects using a diverse amount of 3D modelling programs."
 		},
 		"knowledge": {
 			"language_programing": "Programming languages and Others",
@@ -16,7 +10,7 @@
 				"title": "Languages",
 				"spanish": "Spanish (native)",
 				"english": "English (9 years)",
-				"portugues": "Portuguese (7 years)"
+				"portugues": "Portuguese (elementary)"
 			}
 		}
 	},
@@ -58,6 +52,8 @@
 	"navbar": {
 		"links": {
 			"home": "Home",
+			"projects": "Projects",
+			"technologies": "Technologies",
 			"contact": "Contact"
 		},
 		"langs": {
@@ -67,7 +63,7 @@
 	},
 	"contact": {
 		"title": "Contact",
-		"subtitle": "To contact me or request my resume, you can contact me below.",
+		"subtitle": "To contact me or request my resume, you can use email below.",
 		"form": {
 			"name": "Full name",
 			"subject": "Subject",

@@ -2,15 +2,6 @@
 	display: none;
 }
 
-.player {
-	font-size: 1px;
-}
-
-.video-inicio {
-	height: 100%;
-	width: 100%;
-}
-
 .welcome-arrow {
 	transition: transform 1s;
 	transform: translateY(0px);
@@ -20,38 +11,18 @@
 	transform: translateY(30px);
 }
 
+.photo-profile {
+	max-height: 14em;
+	margin-bottom: 3em;
+	border: 0.3em solid #fff;
+	border-radius: 50%;
+}
+
 .imagen-inicio {
 	height: 100vh;
-	background: url("/assets/img/banner-inicio.png") no-repeat center center fixed;
+	background: url("/assets/img/banner-inicio.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-.logo {
-	transition: width 0.5s ease;
-	width: 12%;
-	height: 12%;
-}
-
-.logo:hover {
-	width: 14%;
-}
-
-.tercera-parte {
-	padding-top: 5em;
-	padding-bottom: 5em;
-	background-color: black;
-	width: 100%;
-	color: white;
-	display: inline-block;
-}
-
-.cuarta-parte {
-	padding: 2em 0em;
-	background-color: #30c77e;
-	max-width: 100vw;
-	color: white;
-	display: inline-block;
 }

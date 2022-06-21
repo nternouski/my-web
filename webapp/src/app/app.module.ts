@@ -11,7 +11,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { FooterModule } from "@components/footer/footer.module";
-import { NavbarModule } from "@components/navbar/navbar.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
 	return new TranslateHttpLoader(http);
@@ -28,8 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 		TranslateModule.forRoot({
 			loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] }
 		}),
-		FooterModule,
-		NavbarModule
+		FooterModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

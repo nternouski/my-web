@@ -8,11 +8,10 @@
 		"seed-export": "firebase emulators:export ./seed",
 		"test": "./node_modules/.bin/tslint -p tsconfig.json",
 		"clean": "./node_modules/.bin/prettier  --write \"**/*.{ts,html,scss,json}\"",
-		"deploy": "cd ../webapp && npm run build && cd ../functions && npm run build && firebase deploy",
 		"lint": ""
 	},
 	"engines": {
-		"node": "8"
+		"node": "10"
 	},
 	"main": "lib/index.js",
 	"dependencies": {

@@ -12,7 +12,9 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
-import { MatCardModule } from "@angular/material/card";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatMenuModule } from "@angular/material/menu";
+import { ScrollButtonModule } from "@components/scroll-button/scroll-button.module";
 @NgModule({
 	declarations: [WelcomeComponent, QualityComponent, ProjectsComponent],
 	imports: [
@@ -22,7 +24,10 @@ import { MatCardModule } from "@angular/material/card";
 		TranslateModule,
 		MatTooltipModule,
 		MatIconModule,
-		MatButtonModule
+		MatButtonModule,
+		MatToolbarModule,
+		MatMenuModule,
+		ScrollButtonModule
 	]
 })
 export class WelcomeModule {}

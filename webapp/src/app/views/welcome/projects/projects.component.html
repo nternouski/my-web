@@ -1,13 +1,9 @@
 <div class="mat-headline" style="text-align: center;">{{ title | translate }}</div>
 <div fxLayout="row wrap" fxLayoutAlign="center">
-	<div
-		*ngFor="let project of projects"
-		class="mat-elevation-z5"
-		style="background-color: white; color: black; border-radius: 0.5em; margin: 0.5em; max-width: 20em;"
-	>
+	<div *ngFor="let project of projects" class="card">
 		<img
 			[src]="'/assets/img/projects/' + project.img"
-			style="width: 100%; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em"
+			style="width: 100%; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em;"
 		/>
 		<div style="padding: 0em 0.7em 0.7em 0.7em;">
 			<div fxLayout="row" fxLayoutAlign="center center">
@@ -16,7 +12,7 @@
 				</div>
 				<a mat-icon-button [href]="project.link"> <mat-icon>open_in_new</mat-icon> </a>
 			</div>
-			<div class="mat-body-1" style="text-align: center;">
+			<div class="mat-body-1" style="text-align: center; user-select: none;">
 				{{ descPath(project.title) | translate }}
 			</div>
 		</div>

@@ -7,10 +7,7 @@
 	"npm.enableScriptExplorer": true,
 	"rest-client.followredirect": false,
 	"editor.rulers": [100],
-	"npm.includeDirectories": [
-		"webapp",
-		"functions",
-		"shared"
-	],
-	"prettier.useTabs": true
+	"npm.includeDirectories": ["webapp", "functions", "shared"],
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 2
 }
