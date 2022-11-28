@@ -4,9 +4,10 @@ import { CommonModule } from "@angular/common";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { TranslateModule } from "@ngx-translate/core";
 
-import { WelcomeRoutingModule } from "./apps-routing.module";
+import { AppsRoutingModule } from "./apps-routing.module";
 import { AppsComponent } from "./apps.component";
 import { BudgetPrivacyPolicyComponent } from "./budget-privacy-policy/budget-privacy-policy.component";
+import { BudgetTermsComponent } from "./budget-terms/budget-terms.component";
 
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatIconModule } from "@angular/material/icon";
@@ -17,10 +18,10 @@ import { ScrollButtonModule } from "@components/scroll-button/scroll-button.modu
 import { FooterModule } from "@components/footer/footer.module";
 
 @NgModule({
-	declarations: [BudgetPrivacyPolicyComponent, AppsComponent],
+	declarations: [BudgetPrivacyPolicyComponent, BudgetTermsComponent, AppsComponent],
 	imports: [
 		CommonModule,
-		WelcomeRoutingModule,
+		AppsRoutingModule,
 		FlexLayoutModule,
 		TranslateModule,
 		MatTooltipModule,

@@ -1,6 +1,6 @@
 {
 	"/api": {
-		"target": "http://localhost:5001/insurtech-development/us-central1/api",
+		"target": "http://localhost:5001/nternouski/us-central1/api",
 		"secure": false,
 		"logLevel": "debug"
 	}

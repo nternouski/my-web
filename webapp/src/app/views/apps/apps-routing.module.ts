@@ -2,14 +2,15 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AppsComponent } from "./apps.component";
 import { BudgetPrivacyPolicyComponent } from "./budget-privacy-policy/budget-privacy-policy.component";
+import { BudgetTermsComponent } from "./budget-terms/budget-terms.component";
 
 export const appRoutes: Routes = [
 	{
-		path: "/",
+		path: "",
 		component: AppsComponent,
 		children: [
 			{ path: "budget/privacy-policy", component: BudgetPrivacyPolicyComponent },
-			{ path: "budget/terms", component: BudgetPrivacyPolicyComponent }
+			{ path: "budget/terms", component: BudgetTermsComponent }
 		]
 	}
 ];
@@ -18,4 +19,4 @@ export const appRoutes: Routes = [
 	imports: [RouterModule.forChild(appRoutes)],
 	exports: [RouterModule]
 })
-export class WelcomeRoutingModule {}
+export class AppsRoutingModule {}

@@ -1,12 +1,11 @@
 <div class="mat-typography">
-	<div id="home" fxLayout="column" fxLayoutAlign="center center" class="imagen-inicio">
+	<div id="home" fxLayout="column" fxLayoutAlign="center center">
 		<mat-toolbar color="accent" style="height: 2.5em;">
-			<button mat-button>Home</button>
-
-			<span fxFlex="auto"></span>
+			<button mat-button routerLink="/">Home</button>
+			<!-- <span fxFlex="auto"></span> -->
 		</mat-toolbar>
 	</div>
-
-	<router-outlet></router-outlet>
-	<app-footer></app-footer>
+	<div style="padding: 3em;">
+		<router-outlet></router-outlet>
+	</div>
 </div>
