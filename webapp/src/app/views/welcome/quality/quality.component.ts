@@ -82,6 +82,9 @@ export class QualityComponent {
 				{ name: "CSS", img: "css.svg", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
 				{ name: "HTML", img: "html.svg", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" }
 			]
+			// [
+			// 	{ name: "React", img: "react.svg", url: "https://reactjs.org/" },
+			// ]
 		]
 	};
 
