@@ -16,10 +16,6 @@
 	},
 	"projects": {
 		"title": "Proyectos",
-		"design3d": {
-			"title": "Diseño 3D",
-			"desc": "Prueba de Concepto. Software utilizado: Blender. Año 2015."
-		},
 		"fix_felix": {
 			"title": "Juego Fix it Felix",
 			"desc": "Trabajo grupal, realizado en Java, cátedra Taller de Lenguaje 2. Año 2015."
@@ -47,6 +43,10 @@
 		"elremanso": {
 			"title": "El Remanso - Mauna",
 			"desc": "Video sobre la ubicación de El Remanso crado con After Effect. Año 2021."
+		},
+		"budget_app": {
+			"title": "Budget App",
+			"desc": "Flutter App sobre finanzas en fase Beta. Year 2022."
 		}
 	},
 	"navbar": {

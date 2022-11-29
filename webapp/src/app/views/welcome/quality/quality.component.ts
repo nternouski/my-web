@@ -11,20 +11,10 @@ export class QualityComponent {
 		elements: [
 			{ name: "Adobe After Effect", stars: ["star", "star", "star", "star", "star_border"] },
 			{ name: "Adobe Illustrator", stars: ["star", "star", "star", "star", "star_border"] },
-			{
-				name: "Adobe Photoshop",
-				stars: ["star", "star", "star", "star_border", "star_border"]
-			},
-			{
-				name: "Adobe InDesign",
-				stars: ["star", "star", "star", "star_border", "star_border"]
-			},
+			{ name: "Adobe Photoshop", stars: ["star", "star", "star", "star_border", "star_border"] },
+			{ name: "Adobe InDesign", stars: ["star", "star", "star", "star_border", "star_border"] },
 			{
 				name: "Adobe Audition",
-				stars: ["star", "star", "star_border", "star_border", "star_border"]
-			},
-			{
-				name: "Blender (3D)",
 				stars: ["star", "star", "star_border", "star_border", "star_border"]
 			}
 		]
@@ -68,7 +58,7 @@ export class QualityComponent {
 				},
 				{ name: "GitLab CI/CD", img: "gitlab-cicd.svg", url: "https://docs.gitlab.com/ee/ci/" },
 				{ name: "Docker", img: "docker.svg", url: "https://www.docker.com/" },
-				{ name: "ElasticSearch", img: "elasticsearch.svg", url: "https://www.elastic.co/" }
+				{ name: "Flutter", img: "flutter.svg", url: "https://flutter.dev/" }
 			],
 			[
 				{ name: "Python", img: "python.svg", url: "https://www.python.org/" },

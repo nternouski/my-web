@@ -16,10 +16,6 @@
 	},
 	"projects": {
 		"title": "Projects",
-		"design3d": {
-			"title": "3D Design",
-			"desc": "Concept Using Blender. Year 2015."
-		},
 		"fix_felix": {
 			"title": "Game Fix it Felix",
 			"desc": "Group assignment, written in  Java, Language Workshop 2 course. 2015."
@@ -33,7 +29,7 @@
 			"desc": "Spiral processes associated with popular education, created using After effect. 2017."
 		},
 		"acordar-branding": {
-			"title": "Corporate identity - Acordar",
+			"title": "Corporate identity",
 			"desc": "Acordar brand design, created in Adobe InDesign. Year 2017."
 		},
 		"acordar-draft": {
@@ -47,6 +43,10 @@
 		"elremanso": {
 			"title": "El Remanso - Mauna",
 			"desc": "Video about location of El Remanso created in After Effect. Year 2021."
+		},
+		"budget_app": {
+			"title": "Budget App",
+			"desc": "Flutter app about finance help - State: Alpha. Year 2022."
 		}
 	},
 	"navbar": {

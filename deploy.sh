@@ -1,7 +1,4 @@
-npm --prefix ./webapp run build 
-# npm --prefix ./functions run build 
-cd ./webapp
-ng build -c=production
-cd ..
+npm --prefix ./webapp run build -c=production
+# npm --prefix ./functions run build
 firebase use nternouski
 firebase deploy --only "hosting"

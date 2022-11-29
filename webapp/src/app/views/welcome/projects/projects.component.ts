@@ -8,11 +8,6 @@ import { Component, Input } from "@angular/core";
 export class ProjectsComponent {
 	title = "projects.title";
 	projects = [
-		{
-			link: "https://www.youtube.com/watch?v=cNLXL_kVEpY",
-			title: "design3d",
-			img: "agua-3d.jpg"
-		},
 		{ link: "https://goo.gl/xHKhVe", title: "fix_felix", img: "fix-felix.png" },
 		{ link: "https://goo.gl/Kzbyry", title: "banner", img: "Ps-HM.jpg" },
 		{
@@ -36,9 +31,14 @@ export class ProjectsComponent {
 			img: "mauna-story.jpg"
 		},
 		{
-			link: "https://www.youtube.com/watch?v=2CF4WiVOGNs&t=2s",
+			link: "https://www.youtube.com/watch?v=2CF4WiVOGNs",
 			title: "elremanso",
 			img: "elremanzo-mauna.jpg"
+		},
+		{
+			link: "https://www.youtube.com/watch?v=7jUuPzeCkv4",
+			title: "budget_app",
+			img: "budget-app.png"
 		}
 	];
 
