@@ -36,7 +36,7 @@ export class ProjectsComponent {
 			img: "elremanzo-mauna.jpg"
 		},
 		{
-			link: "https://www.youtube.com/watch?v=7jUuPzeCkv4",
+			link: "https://play.google.com/store/apps/details?id=com.nternouski.budget&pli=1",
 			title: "budget_app",
 			img: "budget-app.png"
 		}
