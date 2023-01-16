@@ -16,19 +16,25 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatMenuModule } from "@angular/material/menu";
 import { ScrollButtonModule } from "@components/scroll-button/scroll-button.module";
 import { FooterModule } from "@components/footer/footer.module";
+import { BudgetComponent } from "./budget/budget.component";
 
 @NgModule({
-	declarations: [BudgetPrivacyPolicyComponent, BudgetTermsComponent, AppsComponent],
+	declarations: [
+		BudgetPrivacyPolicyComponent,
+		BudgetTermsComponent,
+		BudgetComponent,
+		AppsComponent
+	],
 	imports: [
 		CommonModule,
 		AppsRoutingModule,
 		FlexLayoutModule,
 		TranslateModule,
 		MatTooltipModule,
-		MatIconModule,
 		MatButtonModule,
 		MatToolbarModule,
 		MatMenuModule,
+		MatIconModule,
 		ScrollButtonModule,
 		FooterModule
 	]

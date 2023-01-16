@@ -1,0 +1,17 @@
+@media only screen and (max-width: 576px) {
+	.logo-img {
+		max-height: 6em;
+		margin-bottom: 1em;
+		border: transparent 0.15em solid;
+		border-radius: 20%;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.logo-img {
+		max-height: 9em;
+		margin-bottom: 2em;
+		border: transparent 0.15em solid;
+		border-radius: 20%;
+	}
+}

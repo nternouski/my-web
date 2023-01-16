@@ -1,0 +1,128 @@
+<div style="background-color: black; color: white;">
+	<div fxLayout="column" fxLayoutAlign="center center">
+		<div fxFlex="auto" fxLayoutAlign="center center" style="background: none; padding-top: 2em;">
+			<div fxLayout="column" fxLayoutAlign="center center" style="text-align: center;">
+				<img class="logo-img" src="assets/img/apps/budget/logo-512-512.png" alt="Logo" />
+				<strong
+					[ngClass.gt-md]="{ 'mat-display-2': true }"
+					[ngClass]="{ 'mat-display-1': true }"
+					style=" font-weight: bold; margin-bottom: 1em;"
+				>
+					Budget App
+				</strong>
+				<div fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 1em;">
+					<div [ngClass.gt-md]="{ 'mat-title': true }" [ngClass]="{ 'mat-subheading-2': true }">
+						It is implemented in Flutter, available on:
+					</div>
+					<a
+						href="https://play.google.com/store/apps/details?id=com.nternouski.budget"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="assets/img/apps/budget/google-play-badge.png" style="height: 3em;" />
+					</a>
+				</div>
+				<div fxLayout="row" fxLayoutAlign="center center">
+					<div fxFlex="70" fxFlex.lt-sm="90" style="text-align: justify;">
+						<p>
+							Budget is an application that will help you to analyze your spend and get statistics
+							of your transactions income or outcome between your wallets. Also there are others
+							funcionalities like mobile usage and remaiden mobile data that will help you to manage
+							others aspect of your life.
+						</p>
+
+						<strong>Clear interface:</strong>
+						<p>
+							Budget expense income and transfers between wallets tracker, money, finances app is
+							very easy to use: you can quickly add a transaction with just a couple of clicks.
+						</p>
+
+						<strong>Illustrative display:</strong>
+						<p>
+							The app will automatically draw up current balance and create a pictorial diagram
+							showing your spending patterns (expenses and income and transfers).
+						</p>
+
+						<strong>Explications:</strong>
+						<p>
+							Check out detailed reports in custom periods of time and each category of operation,
+							or type - whatever works best for you.
+						</p>
+
+						<strong>Multicurrency:</strong>
+						<p>
+							The app supports various currencies and show real-time exchange rates which provides
+							comfort of use while traveling abroad, or you can set your rate manually if you are
+							more confortable with that in case you receive income in foreign currencies, etc.
+						</p>
+
+						<strong>Safety:</strong>
+						<p>
+							It's optional but you can set a biometic fingerprint to protect data on your budget so
+							that only you have access to this important information.
+						</p>
+
+						<div>What's included?</div>
+						<ul>
+							<li>
+								Create unlimited budgets on the mobile app or on desktop.
+							</li>
+							<li>
+								Sync budget data across all devices becuase the data is storage in the cloud.
+							</li>
+							<li>
+								Personalize categories and line items in a way that makes sense for you.
+							</li>
+							<li>
+								Adjust or reset your budget throughout the month.
+							</li>
+							<li>
+								Stay on top of spending.
+							</li>
+							<li>
+								Manually track transactions.
+							</li>
+							<li>
+								Set up savings funds and track progress along the way.
+							</li>
+							<li>
+								Check your budget from anywhere.
+							</li>
+							<li>
+								Calculate the reminden of your mobile data
+							</li>
+						</ul>
+						<div>
+							Source code:
+							<a
+								href="https://github.com/nternouski/budget"
+								target="_blank"
+								rel="noopener noreferrer"
+								style="color: #30c77e;"
+							>
+								github.com/nternouski/budget
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div
+		fxLayout="column"
+		fxLayoutAlign="space-evenly "
+		style="text-align: center; padding: 6em 0em;"
+	>
+		<p class="mat-headline" fxFlex="auto">{{ "contact.title" | translate }}</p>
+
+		<div fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 2em;">
+			<div
+				class="mat-subheading-2"
+				style="padding: 0.2em 0.6em; border-radius: 0.5em; border: #30c77e 0.2em solid; font-weight: bold;"
+			>
+				nahuelternouski@gmail.com
+			</div>
+		</div>
+	</div>
+</div>
