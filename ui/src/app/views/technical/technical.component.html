@@ -1,0 +1,110 @@
+<div class="px-8 py-8">
+  <!-- Education -->
+  <section class="mb-8">
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">// education</h2>
+    <div class="bg-surface border border-rim p-4 relative overflow-hidden">
+      <span
+        class="material-symbols-outlined absolute text-fg opacity-[0.12] pointer-events-none select-none font-size"
+        style="font-size: 140px; line-height: 1; right: -40px; bottom: -50px"
+      >
+        school
+      </span>
+      <div class="relative z-10">
+        <div class="flex items-center justify-between mb-1">
+          <span
+            class="font-code text-caption px-1.5 py-0.5 border text-(--accent) border-(--accent-border) bg-(--accent-bg)"
+          >
+            Degree
+          </span>
+          <span class="font-code text-caption text-muted">2013 - 2018</span>
+        </div>
+        <h3 class="text-body-title font-bold text-fg mt-2 mb-0.5">Computer Engineering</h3>
+        <p class="text-body-2 text-dim mb-2">National University of La Plata</p>
+        <div class="flex items-center gap-1.5">
+          <span class="font-code text-caption text-muted uppercase tracking-widest">Score</span>
+          <span class="font-code text-body-2 text-(--accent)">7.44</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech stack -->
+  <section class="mb-8">
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">// tech stack</h2>
+    <div class="grid grid-cols-5 gap-2 max-sm:grid-cols-3">
+      @for (row of techStack; track $index) {
+        @for (tech of row; track tech.name) {
+          <a
+            class="flex items-center justify-center p-2.5 bg-surface border border-rim text-body-2 text-fg no-underline transition-all duration-150 hover:border-(--accent) hover:-translate-y-px"
+            [href]="tech.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ tech.name }}
+          </a>
+        }
+      }
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="mb-8">
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">// languages</h2>
+    <ul class="flex flex-col gap-2 list-none">
+      @for (lang of languages; track lang.name) {
+        <li class="flex items-center gap-4 text-body-2">
+          <span class="w-24 text-fg">{{ lang.name }}</span>
+          <span class="w-14 font-code text-caption text-muted">{{ lang.level }}</span>
+          <span class="inline-flex">
+            @for (s of starsArray(lang.stars); track $index) {
+              <span [class]="s ? 'text-(--accent)' : 'text-rim'">★</span>
+            }
+          </span>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <!-- Projects — 2-col grid -->
+  <section>
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">// projects</h2>
+    <div class="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
+      @for (project of projects; track project.key) {
+        <a
+          class="relative block no-underline hover:no-underline! bg-surface border border-rim p-4 overflow-hidden transition-all duration-150 hover:border-(--accent) group"
+          [href]="project.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <!-- Faint background icon -->
+          <span
+            class="material-symbols-outlined absolute text-fg opacity-[0.12] group-hover:opacity-[0.22] transition-opacity pointer-events-none select-none"
+            style="font-size: 140px; line-height: 1; right: -40px; bottom: -50px"
+          >
+            {{ project.icon }}
+          </span>
+
+          <div class="relative z-10">
+            <div class="flex justify-between items-center mb-2">
+              <span
+                class="font-code text-caption px-1.5 py-0.5 border text-(--accent) border-(--accent-border) bg-(--accent-bg)"
+              >
+                {{ project.tech }}
+              </span>
+              <span class="font-code text-caption text-muted">{{ project.year }}</span>
+            </div>
+            <h3 class="text-body-title font-bold text-fg mb-1 group-hover:underline">
+              {{ project.title }}
+            </h3>
+            <p class="text-body-2 text-muted leading-snug mb-3">{{ project.description }}</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="font-code text-caption px-1.5 py-0.5 bg-surface-high text-muted">
+                {{ project.tech.toUpperCase() }}
+              </span>
+            </div>
+          </div>
+        </a>
+      }
+    </div>
+  </section>
+</div>

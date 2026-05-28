@@ -4,16 +4,19 @@
 		"noImplicitReturns": true,
 		"noUnusedLocals": true,
 		"outDir": "lib",
+		"rootDir": "./src",
 		"sourceMap": true,
 		"strict": true,
 		"target": "es2017",
 		"baseUrl": "./",
+		"ignoreDeprecations": "6.0",
 		"paths": {
 			"@models/*": ["../shared/models/*"],
 			"@shared/*": ["../shared/*"]
 		},
 		"lib": ["es2019"],
-		"typeRoots": ["node_modules/@types"]
+		"typeRoots": ["node_modules/@types"],
+		"esModuleInterop": true
 	},
 	"compileOnSave": true,
 	"include": ["src"]

@@ -1,0 +1,154 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Core palette */
+  --color-canvas: #131313;
+  --color-surface: #1c1b1b;
+  --color-surface-low: #201f1f;
+  --color-surface-high: #2a2a2a;
+  --color-fg: #e5e2e1;
+  --color-dim: #c4c7c8;
+  --color-muted: #8e9192;
+  --color-rim: #444748;
+
+  /* Branch accents */
+  --color-br-main: #00e290;
+  --color-br-main-bg: #002211;
+  --color-br-main-border: #004422;
+  --color-br-tech: #58a6ff;
+  --color-br-tech-bg: #030c1f;
+  --color-br-tech-border: #0c1f40;
+  --color-br-visual: #a371f7;
+  --color-br-visual-bg: #150020;
+  --color-br-visual-border: #2a0040;
+
+  /* Font families */
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-code: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Text scale */
+  --text-caption:     0.6875rem; /* 11px — labels, badges, metadata */
+  --text-body-2:      0.8125rem; /* 13px — descriptions, secondary content */
+  --text-body-1:      0.9375rem; /* 15px — primary body text */
+  --text-body-title:  1.0625rem; /* 17px — card titles, section names */
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: var(--color-br-tech);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rim);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-rim) var(--color-canvas);
+}
+
+/* Blueprint grid — used as fixed background layer */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Branch CSS custom properties */
+.branch-main {
+  --accent: var(--color-br-main);
+  --accent-bg: var(--color-br-main-bg);
+  --accent-border: var(--color-br-main-border);
+}
+.branch-technical {
+  --accent: var(--color-br-tech);
+  --accent-bg: var(--color-br-tech-bg);
+  --accent-border: var(--color-br-tech-border);
+}
+.branch-visual {
+  --accent: var(--color-br-visual);
+  --accent-bg: var(--color-br-visual-bg);
+  --accent-border: var(--color-br-visual-border);
+}
+
+/* Per-branch grid visibility */
+.branch-technical .grid-bg {
+  opacity: 0;
+}
+.branch-visual .grid-bg {
+  opacity: 0.3;
+}
+
+/* Branch radial glows behind content */
+.branch-technical main {
+  background: radial-gradient(ellipse at 60% 30%, rgba(88, 166, 255, 0.07) 0%, transparent 60%);
+}
+.branch-visual main {
+  background: radial-gradient(ellipse at 60% 30%, rgba(163, 113, 247, 0.07) 0%, transparent 60%);
+}
+
+/* Material Symbols display */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+  vertical-align: middle;
+  font-family: 'Material Symbols Outlined';
+}
+
+/* View transitions — scoped to main content only */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-old(main-content) {
+  animation: 200ms ease-in both fade-slide-out;
+}
+::view-transition-new(main-content) {
+  animation: 250ms ease-out both fade-slide-in;
+}
+@keyframes fade-slide-out {
+  to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
