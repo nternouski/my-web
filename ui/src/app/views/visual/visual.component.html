@@ -1,0 +1,64 @@
+<div class="px-8 py-8">
+  <!-- Multimedia skills -->
+  <section class="mb-8">
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">
+      // multimedia skills
+    </h2>
+    <ul class="flex flex-col gap-2.5 list-none">
+      @for (skill of skills; track skill.name) {
+        <li class="flex items-center gap-4 text-body-2">
+          <span class="w-48 text-fg">{{ skill.name }}</span>
+          <!-- inline-flex prevents whitespace gaps between colored/grey star spans -->
+          <span class="inline-flex">
+            @for (s of starsArray(skill.stars); track $index) {
+              <span [class]="s ? 'text-(--accent)' : 'text-rim'">★</span>
+            }
+          </span>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <!-- Projects — 2-col grid -->
+  <section>
+    <h2 class="font-code text-caption text-muted uppercase tracking-widest mb-4">// projects</h2>
+    <div class="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
+      @for (project of projects; track project.key) {
+        <a
+          class="relative block no-underline hover:no-underline! bg-surface border border-rim p-4 overflow-hidden transition-all duration-150 hover:border-(--accent) hover:-translate-y-px group"
+          [href]="project.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <!-- Faint background icon matching project tech -->
+          <span
+            class="material-symbols-outlined absolute text-fg opacity-[0.12] group-hover:opacity-[0.22] transition-opacity pointer-events-none select-none"
+            style="font-size: 140px; line-height: 1; right: -40px; bottom: -50px"
+          >
+            {{ project.icon }}
+          </span>
+
+          <div class="relative z-10">
+            <div class="flex justify-between items-center mb-2">
+              <span
+                class="font-code text-caption px-1.5 py-0.5 border text-(--accent) border-(--accent-border) bg-(--accent-bg)"
+              >
+                {{ project.tech }}
+              </span>
+              <span class="font-code text-caption text-muted">{{ project.year }}</span>
+            </div>
+            <h3 class="text-body-title font-bold text-fg mb-1 group-hover:underline">
+              {{ project.title }}
+            </h3>
+            <p class="text-body-2 text-muted leading-snug mb-3">{{ project.description }}</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="font-code text-caption px-1.5 py-0.5 bg-surface-high text-muted">
+                {{ project.tech.toUpperCase() }}
+              </span>
+            </div>
+          </div>
+        </a>
+      }
+    </div>
+  </section>
+</div>

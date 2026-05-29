@@ -1,0 +1,80 @@
+<div [class]="'flex flex-col h-screen overflow-hidden ' + branchClass()">
+  <!-- Blueprint grid background (fixed, behind everything) -->
+  <div class="fixed inset-0 grid-bg pointer-events-none z-0"></div>
+
+  <!-- Header -->
+  <header
+    class="relative z-50 flex items-center justify-between px-5 h-12 bg-surface/90 backdrop-blur-md border-b border-rim shrink-0"
+  >
+    <div class="flex items-center gap-4">
+      <span class="font-serif text-xl font-bold text-fg">Sebastian</span>
+      <div class="w-px h-4 bg-rim"></div>
+      <span class="font-code text-sm text-[var(--accent)]">
+        Branch: /{{ branchState.activeBranch() }}
+      </span>
+    </div>
+  </header>
+
+  <!-- Body: sidebar + router content -->
+  <div class="flex flex-1 overflow-hidden relative z-10">
+    <!-- Sidebar: icon-only on mobile/tablet, full labels on desktop -->
+    <aside
+      class="w-12 lg:w-44 shrink-0 bg-surface border-r border-rim flex flex-col pt-4 transition-all"
+    >
+      <div
+        class="font-code text-caption text-rim uppercase tracking-widest px-4 mb-3 hidden lg:block"
+      >
+        Navigation Tree
+      </div>
+
+      <!-- Nav tree with SVG git-line overlay -->
+      <nav class="relative flex-1 lg:px-3 px-1">
+        <!--
+          Git-tree SVG: static positions tied to nav item height.
+          CONSTRAINT: each nav item must be h-9 (36px) for circles to align.
+          Circle centers: item 0 → cy=18, item 1 → cy=54, item 2 → cy=90
+        -->
+        <svg
+          class="absolute left-5 top-0 h-full pointer-events-none hidden lg:block"
+          width="14"
+          overflow="visible"
+          aria-hidden="true"
+        >
+          <line x1="3" y1="0" x2="3" y2="100%" stroke="#444748" stroke-width="1.5" />
+          <circle cx="3" cy="18" r="4" [attr.fill]="nodeColor('main')" />
+          <circle cx="3" cy="54" r="3.5" [attr.fill]="nodeColor('technical')" />
+          <circle cx="3" cy="90" r="3.5" [attr.fill]="nodeColor('visual')" />
+        </svg>
+
+        <ul class="list-none">
+          @for (branch of branches; track branch) {
+            <li>
+              <button
+                class="flex items-center justify-center lg:justify-start gap-2.5 h-9 w-full lg:pl-7 lg:pr-2.5 font-code text-caption border cursor-pointer transition-colors text-left"
+                [class]="
+                  branchState.activeBranch() === branch
+                    ? 'text-[var(--accent)] bg-[var(--accent-bg)] border-[var(--accent-border)]'
+                    : 'text-muted bg-transparent border-transparent hover:bg-surface-high hover:text-fg'
+                "
+                (click)="branchState.checkout(branch)"
+              >
+                <span class="material-symbols-outlined text-body-1 leading-none shrink-0">
+                  {{ branchIcon(branch) }}
+                </span>
+                <span class="hidden lg:inline">{{ branch }}</span>
+              </button>
+            </li>
+          }
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="flex-1 overflow-y-auto relative" style="view-transition-name: main-content">
+      <router-outlet />
+    </main>
+  </div>
+
+  <!-- Terminal (unchanged component) -->
+  <app-terminal />
+</div>
